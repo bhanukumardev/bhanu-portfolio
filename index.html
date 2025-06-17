@@ -199,12 +199,16 @@
         </a>
       </p>
     </div>
-    <form action="mailto:kumarbhanu818@gmail.com" method="post" enctype="text/plain" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+   <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
+  <input type="hidden" name="access_key" value="e3401362-a55c-4dc6-a2c7-b40aa6becf58">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+  <button type="submit" class="btn">Send Message</button>
+  <div id="form-status" style="margin-top:1rem;"></div>
+</form>
+
   </div>
 </section>
 

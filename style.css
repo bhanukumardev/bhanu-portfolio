@@ -482,3 +482,9 @@ html {
   color: #fff;
   text-shadow: 0 0 16px #0ff, 0 0 32px #4facfe;
 }
+
+#form-status {
+  font-size: 1.1rem;
+  text-align: center;
+  min-height: 2em;
+}
