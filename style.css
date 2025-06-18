@@ -488,3 +488,83 @@ html {
   text-align: center;
   min-height: 2em;
 }
+
+@media (max-width: 700px) {
+  body, .section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  nav ul {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .logo {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .hero-right, .about-content, .skills-flex, .projects-grid, .contact-flex {
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-text, .skills-group, .project-card, .contact-info, .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section h2 {
+    text-align: center;
+  }
+}
+
+nav ul {
+  padding-left: 0;
+  padding-right: 0;
+  gap: 1.5rem;
+}
+nav ul li a {
+  padding: 0.6em 1em;
+  font-size: 1.1rem;
+}
+
+body, .section {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.section {
+  margin: 28px 0;
+  border-radius: 18px;
+}
+nav ul {
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.hero-right, .about-content, .skills-flex, .projects-grid, .contact-flex {
+  align-items: center;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+footer {
+  margin-top: 40px;
+  padding-bottom: 1.2rem;
+  font-size: 1rem;
+  border-radius: 18px 18px 0 0;
+}
+@media (max-width: 700px) {
+  .section, .about-text, .skills-group, .project-card, .contact-info, .contact-form {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section h2 {
+    font-size: 1.6rem;
+  }
+  .about-avatar {
+    width: 90px;
+    height: 90px;
+  }
+}
