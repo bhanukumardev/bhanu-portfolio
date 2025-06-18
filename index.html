@@ -7,6 +7,9 @@
 <meta property="og:description" content="AI/ML Developer, B.Tech CSE @ KIIT, creative projects and more." />
 <meta property="og:image" content="assets/bhanu-animated.gif" />
 
+<script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.globe.min.js"></script>
 
@@ -45,7 +48,8 @@
       </p>
       <div class="hero-buttons">
         <a href="#projects" class="btn">See Portfolio</a>
-        <a href="mailto:kumarbhanu818@gmail.com" class="btn btn-outline">Contact Me</a>
+       <a href="#contact" class="btn btn-outline">Contact Me</a>
+
       </div>
       <div class="socials">
         <a href="https://github.com/bhanukumardev" target="_blank">GitHub</a>
@@ -60,7 +64,7 @@
 </html>
 
 <!-- About Section -->
-<section id="about" class="section">
+<section id="about" class="section fade-in-section">...</section>
   <h2>About Me</h2>
   <div class="about-content">
     <img src="assets/bhanu-animated.gif" alt="Bhanu Kumar Dev" class="about-avatar" />
@@ -76,7 +80,7 @@
 </section>
 
 <!-- Skills Section -->
-<section id="skills" class="section">
+<section id="skills" class="section fade-in-section">...</section>
   <h2>Skills</h2>
   <div class="skills-flex">
     <div class="skills-group">
@@ -131,51 +135,87 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects" class="section">
+<section id="projects" class="section fade-in-section">
   <h2>Projects</h2>
   <div class="projects-grid">
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3>GenAI Resume Parser</h3>
-      <p>
-        AI-powered resume parser using Python, Flask, OpenAI, and Ollama.<br>
-        <span class="project-keywords">NLP • LLM • PDF Parsing • FastAPI</span>
-      </p>
-      <a href="https://github.com/bhanukumardev/GenAI_Resume_Parser" target="_blank" class="project-link">GitHub</a>
+    <!-- Project 1: GenAI Resume Parser -->
+    <div class="project-card flip-effect">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>GenAI Resume Parser</h3>
+          <p>
+            AI-powered resume parser using Python, Flask, OpenAI, and Ollama.<br>
+            <span class="project-keywords">NLP • LLM • PDF Parsing • FastAPI</span>
+          </p>
+        </div>
+        <div class="card-back">
+          <p>Parse resumes instantly with AI. Try the live demo or view the code.</p>
+          <a href="https://your-live-demo-link.com" target="_blank" class="try-btn">Try It</a>
+          <a href="https://github.com/bhanukumardev/GenAI_Resume_Parser" target="_blank" class="project-link">GitHub</a>
+        </div>
+      </div>
     </div>
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h3>AI Translator App</h3>
-      <p>
-        Real-time multi-language translation app using Python and Streamlit.<br>
-        <span class="project-keywords">Streamlit • Deep Translator • UI/UX</span>
-      </p>
-      <a href="https://github.com/bhanukumardev/TranslatorApp" target="_blank" class="project-link">GitHub</a>
+
+    <!-- Project 2: AI Translator App -->
+    <div class="project-card flip-effect">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>AI Translator App</h3>
+          <p>
+            Real-time multi-language translation app using Python and Streamlit.<br>
+            <span class="project-keywords">Streamlit • Deep Translator • UI/UX</span>
+          </p>
+        </div>
+        <div class="card-back">
+          <p>Translate languages in real-time. Try the demo or see the code.</p>
+          <a href="https://your-translator-demo-link.com" target="_blank" class="try-btn">Try It</a>
+          <a href="https://github.com/bhanukumardev/TranslatorApp" target="_blank" class="project-link">GitHub</a>
+        </div>
+      </div>
     </div>
-    <!-- Project 3 -->
-    <div class="project-card">
-      <h3>Credit Scoring Model</h3>
-      <p>
-        Machine learning model for credit risk analysis using scikit-learn.<br>
-        <span class="project-keywords">ML • Random Forest • Data Analysis</span>
-      </p>
-      <a href="https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel" target="_blank" class="project-link">GitHub</a>
+
+    <!-- Project 3: Credit Scoring Model -->
+    <div class="project-card flip-effect">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Credit Scoring Model</h3>
+          <p>
+            Machine learning model for credit risk analysis using scikit-learn.<br>
+            <span class="project-keywords">ML • Random Forest • Data Analysis</span>
+          </p>
+        </div>
+        <div class="card-back">
+          <p>Predict credit risk with ML. Try the demo or view code.</p>
+          <a href="https://your-credit-demo-link.com" target="_blank" class="try-btn">Try It</a>
+          <a href="https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel" target="_blank" class="project-link">GitHub</a>
+        </div>
+      </div>
     </div>
-    <!-- Project 4 -->
-    <div class="project-card">
-      <h3>Teachable Machine Project</h3>
-      <p>
-        Custom image classifier using Google’s Teachable Machine.<br>
-        <span class="project-keywords">No-code ML • Image Classification</span>
-      </p>
-      <a href="https://github.com/bhanukumardev/TeachableMachineProject" target="_blank" class="project-link">GitHub</a>
+
+    <!-- Project 4: Teachable Machine Project -->
+    <div class="project-card flip-effect">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Teachable Machine Project</h3>
+          <p>
+            Custom image classifier using Google’s Teachable Machine.<br>
+            <span class="project-keywords">No-code ML • Image Classification</span>
+          </p>
+        </div>
+        <div class="card-back">
+          <p>Classify images with a no-code ML tool. Try or view code.</p>
+          <a href="https://your-teachable-demo-link.com" target="_blank" class="try-btn">Try It</a>
+          <a href="https://github.com/bhanukumardev/TeachableMachineProject" target="_blank" class="project-link">GitHub</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
+
 <!-- Contact Section -->
-<section id="contact" class="section">
+<section id="contact" class="section fade-in-section">...</section>
   <h2>Contact</h2>
   <div class="contact-flex">
     <div class="contact-info">
@@ -210,7 +250,7 @@
 </section>
 
 <!-- Achievements & Testimonials Section -->
-<section id="achievements" class="section">
+<section id="achievements" class="section fade-in-section">...</section>
   <h2>🏆 Achievements & Testimonials</h2>
   <div class="achievements-grid">
     <!-- Achievement 1 -->

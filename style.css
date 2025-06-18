@@ -1,4 +1,8 @@
 body {
+  html {
+  scroll-behavior: smooth;
+}
+
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
   background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
@@ -607,4 +611,193 @@ html, body {
     padding-left: 6vw;
     padding-right: 6vw;
   }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .about-content,
+  .skills-flex,
+  .projects-grid,
+  .contact-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-text,
+  .skills-group,
+  .project-card,
+  .contact-info,
+  .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .section h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .about-avatar {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 700px) {
+  #contact.section {
+    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contact-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+#bg3d {
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;
+}
+#hero {
+  position: relative;
+  z-index: 1;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: opacity, visibility, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.project-card {
+  background: rgba(36, 59, 85, 0.95);
+  border-radius: 18px;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 2px 16px #0ff2;
+  color: #fff;
+  transition: 
+    transform 0.3s cubic-bezier(.25,.8,.25,1), 
+    box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 200px;
+  position: relative;
+  will-change: transform, box-shadow;
+  cursor: pointer;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-12px) scale(1.04) rotateY(6deg);
+  box-shadow: 0 16px 48px #0ff9, 0 4px 24px #4facfe;
+  z-index: 2;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .project-card:active {
+    transform: translateY(-12px) scale(1.04) rotateY(6deg);
+    box-shadow: 0 16px 48px #0ff9, 0 4px 24px #4facfe;
+    z-index: 2;
+  }
+}
+
+.project-card {
+  /* ...existing styles... */
+  animation: floatCard 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(0) scale(1) rotateY(0deg);}
+  100% { transform: translateY(-6px) scale(1.01) rotateY(2deg);}
+}
+
+.flip-effect {
+  perspective: 1200px;
+  width: 100%;
+  min-height: 230px;
+  margin-bottom: 2rem;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 230px;
+  transition: transform 0.7s cubic-bezier(.25,.8,.25,1);
+  transform-style: preserve-3d;
+}
+.flip-effect:hover .card-inner,
+.flip-effect:focus-within .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  min-height: 230px;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  background: rgba(36,59,85,0.95);
+  box-shadow: 0 2px 16px #0ff2;
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.card-back {
+  transform: rotateY(180deg);
+  align-items: center;
+  text-align: center;
+}
+.try-btn {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  color: #222;
+  border: none;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 2px 12px #4facfe80;
+  transition: background 0.2s, color 0.2s;
+  margin: 0.5rem;
+}
+.try-btn:hover {
+  background: #0ff;
+  color: #222;
+}
+
+nav ul li a.active {
+  color: #0ff;
+  border-bottom: 2px solid #0ff;
+  font-weight: 700;
+  background: rgba(36, 59, 85, 0.15);
+  border-radius: 6px 6px 0 0;
 }
