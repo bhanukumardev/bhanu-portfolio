@@ -568,3 +568,43 @@ footer {
     height: 90px;
   }
 }
+
+.section {
+  padding: 60px 5vw 40px 5vw;
+  margin: 28px 0;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+@media (max-width: 700px) {
+  .section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-content, .skills-flex, .projects-grid, .contact-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-text, .skills-group, .project-card, .contact-info, .contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+}
