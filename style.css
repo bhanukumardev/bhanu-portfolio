@@ -801,3 +801,23 @@ nav ul li a.active {
   background: rgba(36, 59, 85, 0.15);
   border-radius: 6px 6px 0 0;
 }
+
+.project-icon {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #0ff4;
+  background: #fff2;
+  max-width: 100%;
+  max-height: 80px;
+}
+.project-card img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
