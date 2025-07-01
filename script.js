@@ -38,6 +38,10 @@ window.addEventListener("DOMContentLoaded", function () {
   if (form && status) {
     form.addEventListener("submit", async function(e) {
       e.preventDefault();
+      if (form.botcheck && form.botcheck.value !== "") {
+        status.innerHTML = "<span style='color:red;'>Spam detected. Submission blocked.</span>";
+        return;
+      }
       status.innerHTML = "Sending...";
       const formData = new FormData(form);
       const response = await fetch(form.action, {
@@ -90,11 +94,17 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // === Project Card Flip on Tap (Mobile) ===
+  // === Project Card Flip on Tap (Mobile) + Accessibility ===
   const cards = document.querySelectorAll('.project-card.flip-effect');
   cards.forEach(card => {
     card.addEventListener('touchstart', function() {
       this.classList.toggle('flipped');
     });
+    card.addEventListener('keydown', function(e) {
+      if (e.key === "Enter" || e.key === " ") {
+        this.classList.toggle('flipped');
+      }
+    });
+    card.setAttribute('tabindex', '0');
   });
 });
