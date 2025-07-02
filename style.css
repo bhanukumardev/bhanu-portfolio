@@ -204,57 +204,99 @@ html {
 }
 
 .skills-flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 950px;
+  margin: 2.5rem auto 0 auto;
+  box-sizing: border-box;
+  align-items: stretch;
 }
+
 .skills-group {
-  background: rgba(36, 59, 85, 0.85);
-  border-radius: 18px;
-  box-shadow: 0 2px 16px #0ff3;
-  padding: 1.5rem 1.2rem;
-  min-width: 200px;
-  max-width: 260px;
-  flex: 1 1 220px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  background: rgba(36, 59, 85, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #0ff2;
+  padding: 1.1rem 1rem 1.1rem 1rem;
+  color: #c3e0ff;
+  text-align: left;
+  min-width: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
 }
+
 .skills-group:hover {
-  transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 8px 32px #0ff6;
+  box-shadow: 0 6px 32px #0ff7, 0 2px 12px #4facfe60;
+  transform: translateY(-3px) scale(1.02);
 }
+
 .skills-group h3 {
-  color: #0ff;
-  font-size: 1.2rem;
+  color: #00ffe7;
+  font-size: 1.08rem;
   margin-bottom: 0.7rem;
-  text-align: center;
-  letter-spacing: 1px;
-  text-shadow: 0 0 8px #0ff8;
+  text-shadow: 0 0 8px #0ff5;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: left;
+  width: 100%;
 }
+
 .skills-group ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
+
 .skills-group li {
-  background: #243b55;
+  background: rgba(36, 59, 85, 0.5);
   color: #fff;
-  border-radius: 14px;
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  font-size: 1.05rem;
-  box-shadow: 0 1px 8px #0ff2;
+  border-radius: 10px;
+  padding: 0.38em 0.9em;
+  margin-bottom: 0.35em;
+  font-size: 1.01rem;
+  box-shadow: 0 1px 6px #0ff2 inset;
   transition: background 0.2s, color 0.2s;
+  text-align: left;
+  word-break: break-word;
 }
+
+.skills-group li:last-child {
+  margin-bottom: 0;
+}
+
 .skills-group li:hover {
   background: #0ff;
   color: #222;
 }
-@media (max-width: 900px) {
-  .skills-flex { flex-direction: column; align-items: center; }
-  .skills-group { max-width: 100%; }
+
+/* Responsive: stack cards and increase touch targets */
+@media (max-width: 700px) {
+  .skills-flex {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 0 2vw;
+    max-width: 100vw;
+  }
+  .skills-group {
+    padding: 0.8rem 0.7rem;
+    border-radius: 10px;
+    font-size: 0.98rem;
+    align-items: flex-start;
+  }
+  .skills-group h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .skills-group li {
+    font-size: 0.97rem;
+    padding: 0.45em 0.7em;
+  }
 }
 
 .projects-grid {
@@ -1432,165 +1474,6 @@ nav ul li a.active {
     min-width: 100%;
   }
 }
-/* Skills Section Container */
-#skills .skills-flex {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2.2rem;
-  justify-items: center;
-  align-items: start;
-  margin-top: 2.5rem;
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Individual Skill Group Cards */
-#skills .skills-group {
-  width: 100%;
-  max-width: 300px;
-  min-width: 220px;
-  background: rgba(36, 59, 85, 0.92);
-  border-radius: 18px;
-  box-shadow: 0 4px 32px #0ff4, 0 2px 12px #4facfe60;
-  backdrop-filter: blur(8px) saturate(1.5);
-  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
-  color: #c3e0ff;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#skills .skills-group:hover {
-  transform: translateY(-8px) scale(1.04) rotateY(4deg);
-  box-shadow: 0 8px 48px #0ff9, 0 4px 24px #4facfe;
-  z-index: 2;
-}
-
-#skills .skills-group h3 {
-  color: #00ffe7;
-  font-size: 1.18rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 8px #0ff8;
-  letter-spacing: 0.5px;
-  font-weight: 700;
-}
-
-#skills .skills-group ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #c3e0ff;
-  font-size: 1.07rem;
-  line-height: 1.7;
-  text-align: left;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4em;
-}
-
-#skills .skills-group ul li {
-  background: rgba(36, 59, 85, 0.55);
-  border-radius: 10px;
-  padding: 0.4em 0.8em;
-  box-shadow: 0 1px 8px #0ff2 inset;
-  transition: background 0.2s, color 0.2s;
-  margin-bottom: 0.3em;
-  text-align: left;
-  font-size: 1em;
-  font-weight: 500;
-}
-
-#skills .skills-group ul li:hover {
-  background: #0ff;
-  color: #222;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 900px) {
-  #skills .skills-flex {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-    max-width: 98vw;
-  }
-  #skills .skills-group {
-    max-width: 98vw;
-    min-width: 0;
-    margin-bottom: 1.2rem;
-  }
-}
-.skills-flex {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-  width: 100%;
-  max-width: 100vw;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.skills-group {
-  background: rgba(36, 59, 85, 0.92);
-  border-radius: 18px;
-  box-shadow: 0 2px 12px #0ff2;
-  padding: 1.2rem 1rem;
-  margin: 0;
-  width: 100%;
-  max-width: 320px;
-  min-width: 0;
-  box-sizing: border-box;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-@media (max-width: 700px) {
-  .skills-flex {
-    grid-template-columns: 1fr;
-    gap: 0.7rem;
-    padding: 0 2vw;
-  }
-  .skills-group {
-    max-width: 100%;
-    padding: 1rem 0.6rem;
-  }
-}
-@media (max-width: 700px) {
-  .skills-group, .skills-group:hover {
-    transform: none !important;
-    box-shadow: 0 2px 8px #0ff2;
-    animation: none !important;
-  }
-}
-@media (max-width: 700px) {
-  .skills-group, .achievement-card {
-    animation: none !important;
-    box-shadow: 0 2px 8px #0ff2;
-    transform: none !important;
-    transition: none !important;
-  }
-}
-.skills-flex {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-@media (max-width: 700px) {
-  .skills-flex {
-    grid-template-columns: 1fr;
-    gap: 0.7rem;
-    padding: 0 2vw;
-  }
-  .skills-group {
-    max-width: 100%;
-    padding: 1rem 0.6rem;
-  }
-}
-
 .education-grid {
   display: flex;
   flex-direction: column;
