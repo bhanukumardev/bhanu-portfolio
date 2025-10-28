@@ -7,6 +7,11 @@
   <meta name="description" content="Portfolio of Bhanu Kumar Dev - AI/ML enthusiast, full-stack developer, and national award winner. Explore projects, achievements, and certifications." />
   <meta name="author" content="Bhanu Kumar Dev" />
   <meta name="keywords" content="Bhanu Kumar Dev, AI, ML, Full-Stack Developer, Portfolio, Projects, Certifications" />
+  
+  <!-- SEO & Browser Settings -->
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000000" />
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Bhanu Kumar Dev - AI/ML Developer & Full-Stack Engineer" />
@@ -15,18 +20,26 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/gif" />
+  <meta property="og:image:alt" content="Bhanu Kumar Dev - AI/ML Developer Portfolio" />
   <meta property="og:url" content="https://bhanukumardev.github.io/bhanu-portfolio/" />
   <meta property="og:site_name" content="Bhanu Kumar Dev - Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Bhanu Kumar Dev - AI/ML Developer" />
   <meta name="twitter:description" content="Portfolio showcasing AI/ML projects, achievements, and professional certifications" />
   <meta name="twitter:image" content="/assets/bhanu-animated.gif" />
+  <meta name="twitter:image:alt" content="Bhanu Kumar Dev - AI/ML Developer Portfolio" />
+  
   <!-- Canonical URL -->
   <link rel="canonical" href="https://bhanukumardev.github.io/bhanu-portfolio/" />
-  <link rel="apple-touch-icon" href="/public/bhanu-profile.jpg" />
-  <!-- Fallback favicon (replace with your logo file later) -->
-  <link rel="icon" href="/placeholder.svg" />
+  <link rel="apple-touch-icon" href="/assets/bhanu-profile.jpg" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  
   <!-- Start Single Page Apps for GitHub Pages -->
   <script type="text/javascript">
     // Single Page Apps for GitHub Pages
@@ -34,3 +47,27 @@
     // https://github.com/rafgraph/spa-github-pages
     // This script checks to see if a redirect is present in the query string,
     // converts it back to the correct url and adds it to the
+    // browser history using window.history.replaceState(...),
+    // which won't cause the browser to attempt to load the new url.
+    // When the single page app is loaded further down in this file,
+    // the correct url will be waiting in the browser history for
+    // the single page app to route accordingly.
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+  <!-- End Single Page Apps for GitHub Pages -->
+  <script type="module" crossorigin src="/assets/index-BYkT_LAi.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BqSYCGnT.css">
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
