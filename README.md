@@ -4,7 +4,7 @@
 
 <img src="./assets/bhanu-animated.gif" alt="Bhanu Kumar" width="200" />
 
-### 👨‍💻 Full Stack Developer | 🎨 UI/UX Enthusiast | ☁️ Cloud Developer | 🤖 AI/ML Enthusiast
+### 👨‍💻 Full Stack Developer | 🤖 AI/ML Enthusiast
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-success?style=for-the-badge&logo=vercel)](https://bhanukumardev.github.io/bhanu-portfolio/)
 [![GitHub followers](https://img.shields.io/github/followers/bhanukumardev?style=for-the-badge&logo=github)](https://github.com/bhanukumardev)
@@ -220,6 +220,6 @@ This project is open source and available for learning and inspiration. Please g
 
 **Made with ❤️ by Bhanu Kumar Dev**
 
-*Updated via Comet Assistant - AI-powered development companion*
+*Last Updated October 2025*
 
 </div>
