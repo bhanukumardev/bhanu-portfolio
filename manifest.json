@@ -1,0 +1,52 @@
+{
+  "name": "Bhanu Kumar Dev - Portfolio",
+  "short_name": "BhanuDev",
+  "description": "Portfolio of Bhanu Kumar Dev - AI/ML Developer & Full-Stack Engineer",
+  "start_url": "/bhanu-portfolio/",
+  "scope": "/bhanu-portfolio/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "technology", "developer"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/bhanu-portfolio/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/bhanu-portfolio/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "View all projects",
+      "url": "/bhanu-portfolio/#projects",
+      "icons": [{
+        "src": "/bhanu-portfolio/icons/icon-192.png",
+        "sizes": "192x192"
+      }]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Contact information",
+      "url": "/bhanu-portfolio/#contact",
+      "icons": [{
+        "src": "/bhanu-portfolio/icons/icon-192.png",
+        "sizes": "192x192"
+      }]
+    }
+  ]
+}
