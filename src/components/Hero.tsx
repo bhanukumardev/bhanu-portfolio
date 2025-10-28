@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import bhanuGif from "../../assets/bhanu-animated.gif";
+import resumePdf from "../../assets/bhanu-kumar-dev-resume.pdf";
 
 // Professional avatar image (you'll need to add this to assets)
 const avatarImage = bhanuGif; // Using existing gif for now - replace with professional photo
@@ -99,6 +100,30 @@ export const Hero = () => {
     });
   };
 
+  const goToContact = () => {
+    const el = document.getElementById("contact");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      // fallback: update the hash so navigation still works if element isn't present yet
+      window.location.hash = "#contact";
+    }
+  };
+
+  const handleDownloadResume = () => {
+    try {
+      const a = document.createElement("a");
+      a.href = resumePdf as unknown as string;
+      a.download = "bhanu-kumar-dev-resume.pdf";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    } catch (err) {
+      // fallback: open in new tab
+      window.open(resumePdf as unknown as string, "_blank");
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Gradient Background */}
@@ -178,6 +203,7 @@ export const Hero = () => {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
+                onClick={handleDownloadResume}
               >
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
@@ -187,6 +213,7 @@ export const Hero = () => {
                 size="lg"
                 variant="outline"
                 className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 transform hover:scale-105"
+                onClick={goToContact}
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Me
@@ -196,7 +223,7 @@ export const Hero = () => {
             {/* Animated Social Icons */}
             <div className="flex items-center gap-4 ml-4">
               <motion.a
-                href="https://github.com/bhanukumardev"
+                href="https://github.com/bhanukumardev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 5 }}
@@ -207,7 +234,7 @@ export const Hero = () => {
               </motion.a>
               
               <motion.a
-                href="https://linkedin.com/in/bhanukumardev"
+                href="https://www.linkedin.com/in/bhanu-kumar-dev-97b820313/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: -5 }}
@@ -219,24 +246,7 @@ export const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Award/Certificate Badges */}
-          <motion.div
-            variants={itemVariants}
-            className="flex items-center justify-center gap-4 mt-8"
-          >
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-900/20 border border-yellow-600/30">
-              <div className="w-3 h-3 rounded-full bg-yellow-500" />
-              <span className="text-sm text-yellow-400 font-medium">AWS Certified</span>
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-green-900/20 border border-green-600/30">
-              <div className="w-3 h-3 rounded-full bg-green-500" />
-              <span className="text-sm text-green-400 font-medium">Google Cloud</span>
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-blue-900/20 border border-blue-600/30">
-              <div className="w-3 h-3 rounded-full bg-blue-500" />
-              <span className="text-sm text-blue-400 font-medium">Microsoft Azure</span>
-            </div>
-          </motion.div>
+          {/* Badges removed per request */}
 
           {/* Animated Scroll Down Arrow */}
           <motion.div
