@@ -12,6 +12,9 @@
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#000000" />
   
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/bhanu-portfolio/manifest.json">
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Bhanu Kumar Dev - AI/ML Developer & Full-Stack Engineer" />
@@ -34,36 +37,6 @@
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://bhanukumardev.github.io/bhanu-portfolio/" />
-  <link rel="apple-touch-icon" href="/bhanu-portfolio/assets/bhanu-profile.jpg" />
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/bhanu-portfolio/assets/favicon.ico" />
-  <link rel="icon" type="image/svg+xml" href="/bhanu-portfolio/assets/favicon.svg" />
-  
-  <!-- Start Single Page Apps for GitHub Pages -->
-  <script type="text/javascript">
-    // Single Page Apps for GitHub Pages
-    // MIT License
-    // https://github.com/rafgraph/spa-github-pages
-    // This script checks to see if a redirect is present in the query string,
-    // converts it back to the correct url and adds it to the
-    // browser history using window.history.replaceState(...),
-    // which won't cause the browser to attempt to load the new url.
-    // When the single page app is loaded further down in this file,
-    // the correct url will be waiting in the browser history for
-    // the single page app to route accordingly.
-    (function(l) {
-      if (l.search[1] === '/' ) {
-        var decoded = l.search.slice(1).split('&').map(function(s) { 
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    }(window.location))
-  </script>
-  <!-- End Single Page Apps for GitHub Pages -->
 </head>
 <body>
   <div id="root"></div>
