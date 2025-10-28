@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 17% 7%;
+    --foreground: 180 100% 90%;
+
+    --card: 220 15% 12%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 220 15% 12%;
+    --popover-foreground: 180 100% 95%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 17% 7%;
+    --primary-variant: 190 100% 45%;
+    --primary-glow: 180 100% 60%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 180 100% 95%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 180 50% 70%;
+
+    --accent: 280 100% 60%;
+    --accent-foreground: 220 17% 7%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(190 100% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(280 100% 60%), hsl(260 100% 55%));
+    --gradient-card: linear-gradient(135deg, hsl(220 15% 12% / 0.8), hsl(220 15% 15% / 0.6));
+    
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 40px hsl(180 100% 50% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(180 100% 50% / 0.2);
+    --shadow-elegant: 0 20px 50px -12px hsl(220 17% 7% / 0.5);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 220 15% 12%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 220 17% 7%;
+    --sidebar-accent: 220 15% 20%;
+    --sidebar-accent-foreground: 180 100% 95%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  /* Ensure images are responsive by default */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      max-width: 90vw;
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-variant bg-clip-text text-transparent;
+  }
+
+  .card-glow {
+    @apply relative;
+  }
+
+  .card-glow::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg opacity-0 transition-opacity duration-300;
+    background: var(--gradient-primary);
+    filter: blur(20px);
+    z-index: -1;
+  }
+
+  .card-glow:hover::before {
+    @apply opacity-30;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-glow;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-xl bg-card/30 border border-border/50;
+  }
+
+  .gradient-border {
+    @apply relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg p-[1px];
+    background: var(--gradient-primary);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}
