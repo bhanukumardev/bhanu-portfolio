@@ -2,6 +2,9 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import bhanuFavicon from "../assets/bhanu-animated.gif";
+// AOS (Animate On Scroll)
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Dynamically set favicon to the local animated profile asset
 const setFavicon = (href: string) => {
@@ -16,6 +19,10 @@ const setFavicon = (href: string) => {
 
 setFavicon(bhanuFavicon as string);
 createRoot(document.getElementById("root")!).render(<App />);
+
+// Initialize AOS for scroll animations
+// `once: true` ensures animation runs only once per element; tweak duration as desired
+AOS.init({ once: true, duration: 800 });
 
 // Register Service Worker for PWA functionality
 if ('serviceWorker' in navigator && import.meta.env.PROD) {

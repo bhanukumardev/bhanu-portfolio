@@ -85,7 +85,7 @@ const education: Education[] = [
 
 export const EducationSection = () => {
   return (
-    <section id="education" className="py-20 px-4 bg-gradient-to-b from-muted/20 to-background">
+    <section id="education" data-aos="fade-left" className="py-20 px-4 bg-gradient-to-b from-muted/20 to-background">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

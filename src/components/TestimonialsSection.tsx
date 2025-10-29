@@ -3,7 +3,7 @@ import { Quote } from "lucide-react";
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
+    <section id="testimonials" data-aos="fade-up" className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

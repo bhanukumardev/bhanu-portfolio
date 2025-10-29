@@ -3,7 +3,7 @@ import bhanuGif from "../../assets/bhanu-animated.gif";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
+    <section id="about" data-aos="fade-up" className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative">

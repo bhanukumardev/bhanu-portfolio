@@ -7,7 +7,7 @@ export const AchievementsSection = () => {
   const academic = achievements.filter(a => a.category === 'academic');
 
   return (
-    <section id="achievements" className="py-20 px-4">
+    <section id="achievements" data-aos="fade-up" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
