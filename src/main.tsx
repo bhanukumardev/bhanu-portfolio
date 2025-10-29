@@ -22,7 +22,10 @@ createRoot(document.getElementById("root")!).render(<App />);
 
 // Initialize AOS for scroll animations
 // `once: true` ensures animation runs only once per element; tweak duration as desired
-AOS.init({ once: true, duration: 800 });
+// Replay animations every time an element enters the viewport while scrolling:
+// - once: false  -> allow repeated animations each time element scrolls into view
+// - mirror: true  -> animate elements both when scrolling down and when scrolling back up
+AOS.init({ once: false, mirror: true, duration: 800 });
 
 // Register Service Worker for PWA functionality
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
