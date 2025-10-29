@@ -20,7 +20,8 @@ export const CertificationsSection = () => {
             <div
               key={cert.id}
               className="p-4 rounded-xl hover-lift bg-slate-800/40 border border-slate-700/30"
-              style={{ animationDelay: `${index * 0.06}s` }}
+              data-aos="zoom-in"
+              data-aos-delay={`${index * 80}`}
             >
               <div className="flex items-center gap-3 mb-3">
                 <div className="relative flex-shrink-0">

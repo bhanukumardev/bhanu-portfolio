@@ -101,7 +101,8 @@ export const EducationSection = () => {
             <div
               key={edu.id}
               className="card-glow glass-effect p-6 md:p-8 rounded-xl hover-lift"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
             >
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0">

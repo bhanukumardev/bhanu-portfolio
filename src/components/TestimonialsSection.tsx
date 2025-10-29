@@ -19,7 +19,8 @@ export const TestimonialsSection = () => {
             <div
               key={testimonial.id}
               className="card-glow glass-effect p-8 rounded-xl hover-lift relative"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
             >
               <Quote className="absolute top-6 right-6 w-12 h-12 text-primary/20" />
               

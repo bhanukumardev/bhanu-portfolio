@@ -102,7 +102,8 @@ export const SkillsSection = () => {
             <div
               key={category.id}
               className="card-glow glass-effect p-6 rounded-xl hover-lift"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              data-aos="flip-up"
+              data-aos-delay={`${index * 80}`}
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary">

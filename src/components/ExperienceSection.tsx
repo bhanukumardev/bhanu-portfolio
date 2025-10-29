@@ -167,7 +167,8 @@ export const ExperienceSection = () => {
             <div
               key={exp.id}
               className="card-glow glass-effect p-6 md:p-8 rounded-xl hover-lift"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              data-aos="fade-up"
+              data-aos-delay={`${index * 120}`}
             >
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0">
@@ -189,7 +190,7 @@ export const ExperienceSection = () => {
 
                   <ul className="space-y-2">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="text-sm text-muted-foreground flex gap-2">
+                      <li key={i} className="text-sm text-muted-foreground flex gap-2" data-aos="fade-left" data-aos-delay={`${i * 80}`}>
                         <Briefcase className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" />
                         <span>{item}</span>
                       </li>

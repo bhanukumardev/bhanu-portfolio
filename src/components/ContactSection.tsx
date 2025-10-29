@@ -19,6 +19,8 @@ export const ContactSection = () => {
           <a
             href="mailto:kumarbhanu818@gmail.com"
             className="card-glow glass-effect p-6 rounded-xl hover-lift text-center"
+            data-aos="fade-up"
+            data-aos-delay="80"
           >
             <Mail className="w-12 h-12 mx-auto mb-4 text-primary" />
             <h3 className="font-bold mb-2">Email</h3>
@@ -30,6 +32,8 @@ export const ContactSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="card-glow glass-effect p-6 rounded-xl hover-lift text-center"
+            data-aos="fade-up"
+            data-aos-delay="160"
           >
             <Linkedin className="w-12 h-12 mx-auto mb-4 text-primary" />
             <h3 className="font-bold mb-2">LinkedIn</h3>
@@ -41,6 +45,8 @@ export const ContactSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="card-glow glass-effect p-6 rounded-xl hover-lift text-center"
+            data-aos="fade-up"
+            data-aos-delay="240"
           >
             <Github className="w-12 h-12 mx-auto mb-4 text-primary" />
             <h3 className="font-bold mb-2">GitHub</h3>
@@ -49,7 +55,7 @@ export const ContactSection = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="card-glow glass-effect p-8 md:p-12 rounded-xl">
+        <div className="card-glow glass-effect p-8 md:p-12 rounded-xl" data-aos="zoom-in" data-aos-delay="120">
           <h3 className="text-2xl font-bold mb-6 text-center">Send a Direct Message</h3>
           <ContactForm />
         </div>

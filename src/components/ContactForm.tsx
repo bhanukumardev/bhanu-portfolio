@@ -90,7 +90,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto" aria-labelledby="contact-form-heading">
+    <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto" aria-labelledby="contact-form-heading" data-aos="fade-up" data-aos-delay="80">
       <h2 id="contact-form-heading" className="sr-only">Contact form</h2>
 
       <div>
@@ -107,6 +107,8 @@ export const ContactForm = () => {
           aria-invalid={!!errors.name}
           aria-describedby={errors.name ? "name-error" : undefined}
           className="bg-muted border-border focus:border-primary focus:ring focus:ring-primary/30"
+          data-aos="fade-up"
+          data-aos-delay="140"
         />
         {errors.name && (
           <p id="name-error" role="alert" className="mt-1 text-sm text-red-600">
@@ -129,6 +131,8 @@ export const ContactForm = () => {
           aria-invalid={!!errors.email}
           aria-describedby={errors.email ? "email-error" : undefined}
           className="bg-muted border-border focus:border-primary focus:ring focus:ring-primary/30"
+          data-aos="fade-up"
+          data-aos-delay="200"
         />
         {errors.email && (
           <p id="email-error" role="alert" className="mt-1 text-sm text-red-600">
@@ -151,6 +155,8 @@ export const ContactForm = () => {
           aria-describedby={errors.message ? "message-error" : undefined}
           rows={6}
           className="bg-muted border-border focus:border-primary focus:ring focus:ring-primary/30 resize-none"
+          data-aos="fade-up"
+          data-aos-delay="260"
         />
         {errors.message && (
           <p id="message-error" role="alert" className="mt-1 text-sm text-red-600">
@@ -177,6 +183,8 @@ export const ContactForm = () => {
         disabled={isSubmitting}
         className="w-full bg-gradient-primary hover:shadow-glow"
         aria-live="polite"
+        data-aos="zoom-in"
+        data-aos-delay="320"
       >
         {isSubmitting ? (
           "Sending..."

@@ -26,7 +26,8 @@ export const AchievementsSection = () => {
               <div
                 key={achievement.id}
                 className="card-glow glass-effect p-6 rounded-xl hover-lift"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                data-aos="fade-up"
+                data-aos-delay={`${index * 90}`}
               >
                 <div className="flex items-start gap-4 mb-4">
                   <img
@@ -63,7 +64,8 @@ export const AchievementsSection = () => {
                 <div
                   key={achievement.id}
                   className="card-glow glass-effect p-6 rounded-xl hover-lift"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  data-aos="fade-up"
+                  data-aos-delay={`${index * 90}`}
                 >
                   <div className="flex items-start gap-4">
                     <img
@@ -100,7 +102,8 @@ export const AchievementsSection = () => {
               <div
                 key={achievement.id}
                 className="card-glow glass-effect p-6 rounded-xl hover-lift text-center"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                data-aos="fade-up"
+                data-aos-delay={`${index * 90}`}
               >
                 <img
                   src={achievement.logo}
