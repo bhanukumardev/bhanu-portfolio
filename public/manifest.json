@@ -1,0 +1,20 @@
+{
+  "short_name": "BhanuPortfolio",
+  "name": "Bhanu Kumar Dev Portfolio",
+  "icons": [
+    {
+      "src": "/bhanu-portfolio/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/bhanu-portfolio/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/bhanu-portfolio/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e293b"
+}
