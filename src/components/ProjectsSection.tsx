@@ -1,10 +1,37 @@
 import { projects } from "@/data/projects";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20, scale: 0.98 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" data-aos="flip-left" className="py-20 px-4 bg-gradient-to-b from-muted/20 to-background">
+    <motion.section
+      id="projects"
+      className="py-20 px-4 bg-gradient-to-b from-muted/20 to-background"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.18 }}
+      variants={containerVariants}
+    >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -17,10 +44,10 @@ export const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={project.title}
               className="card-glow glass-effect rounded-xl overflow-hidden hover-lift flex flex-col"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              variants={cardVariants}
             >
               <div className="aspect-video overflow-hidden bg-muted">
                 <img
@@ -88,10 +115,10 @@ export const ProjectsSection = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

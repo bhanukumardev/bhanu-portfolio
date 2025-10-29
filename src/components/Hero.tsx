@@ -145,7 +145,8 @@ export const Hero = () => {
           className="space-y-8"
           variants={containerVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
         >
           {/* Professional Avatar */}
           <motion.div
