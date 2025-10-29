@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="backdrop-blur bg-slate-900/30 rounded-full border border-slate-800/40 py-2 px-4 flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <a href="/" className="flex items-center gap-3">
+              <a href="/bhanu-portfolio/" className="flex items-center gap-3">
                 <img
                   src={bhanuGif}
                   alt="Bhanu Kumar Dev"
