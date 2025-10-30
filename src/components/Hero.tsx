@@ -173,14 +173,14 @@ export const Hero = () => {
           {/* Name - Bold Headline */}
           <motion.h1
             variants={itemVariants}
-            className="font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight"
+            className="font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight tracking-tight"
           >
             Bhanu Kumar Dev
           </motion.h1>
 
           {/* Subtitle with Typing Effect */}
-          <motion.div variants={itemVariants} className="h-16 flex items-center justify-center">
-            <h2 className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 font-light">
+          <motion.div variants={itemVariants} className="h-auto flex items-center justify-center">
+            <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-200 font-medium">
               {typedText}
               <span className="animate-pulse text-cyan-400">|</span>
             </h2>
@@ -189,7 +189,7 @@ export const Hero = () => {
           {/* Value Proposition */}
           <motion.p
             variants={itemVariants}
-            className="text-sm sm:text-base md:text-lg text-gray-400 max-w-prose mx-auto font-light"
+            className="text-base sm:text-lg md:text-xl text-gray-300 max-w-prose mx-auto font-light px-2"
           >
             Building intelligent solutions that bridge artificial intelligence with exceptional user experiences
           </motion.p>
@@ -204,7 +204,7 @@ export const Hero = () => {
               <div className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
+                  className="w-full sm:w-auto bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 text-lg font-semibold"
                   onClick={handleDownloadResume}
                 >
                   <Download className="mr-2 h-5 w-5" />
@@ -216,7 +216,7 @@ export const Hero = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 transform hover:scale-105"
+                  className="w-full sm:w-auto border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 transform hover:scale-105 text-lg font-semibold"
                   onClick={goToContact}
                 >
                   <Mail className="mr-2 h-5 w-5" />
