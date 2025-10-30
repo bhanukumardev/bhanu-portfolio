@@ -125,7 +125,7 @@ export const Hero = () => {
   };
 
   return (
-  <section className="relative w-screen min-h-screen flex items-center justify-center overflow-visible pt-28">
+  <section className="relative w-screen min-h-[85vh] flex items-center justify-center overflow-visible pt-28">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-cyan-900/30" />
       
@@ -140,7 +140,7 @@ export const Hero = () => {
       <BackgroundParticles />
 
   {/* Main Content */}
-  <div className="relative z-10 w-screen px-4 sm:px-6 py-12 text-center">
+  <div className="relative z-10 w-screen px-3 sm:px-6 py-12 text-center">
         <motion.div
           className="space-y-6 w-full max-w-6xl mx-auto"
           variants={containerVariants}
