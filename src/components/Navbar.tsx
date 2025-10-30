@@ -26,10 +26,10 @@ const Navbar: React.FC = () => {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.45 }}
-        className="fixed top-4 left-0 right-0 z-50"
+        className="fixed top-4 left-0 right-0 z-50 flex justify-center"
       >
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="backdrop-blur bg-slate-900/30 rounded-full border border-slate-800/40 py-2 px-4 flex items-center justify-between">
+        <div className="w-screen px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto w-full backdrop-blur bg-slate-900/30 rounded-full border border-slate-800/40 py-2 px-4 flex items-center justify-between">
             <div className="flex items-center gap-4">
               <a href="/bhanu-portfolio/" className="flex items-center gap-3">
                 <img

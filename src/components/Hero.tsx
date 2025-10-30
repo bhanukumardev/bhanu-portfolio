@@ -125,7 +125,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <section className="relative w-screen min-h-screen flex items-center justify-center overflow-visible pt-28">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-cyan-900/30" />
       
@@ -140,9 +140,9 @@ export const Hero = () => {
       <BackgroundParticles />
 
   {/* Main Content */}
-  <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-12 text-center">
+  <div className="relative z-10 w-screen px-4 sm:px-6 py-12 text-center">
         <motion.div
-          className="space-y-8"
+          className="space-y-6 w-full max-w-6xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -173,14 +173,14 @@ export const Hero = () => {
           {/* Name - Bold Headline */}
           <motion.h1
             variants={itemVariants}
-            className="font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight"
+            className="font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight"
           >
             Bhanu Kumar Dev
           </motion.h1>
 
           {/* Subtitle with Typing Effect */}
           <motion.div variants={itemVariants} className="h-16 flex items-center justify-center">
-            <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl text-gray-300 font-light">
+            <h2 className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 font-light">
               {typedText}
               <span className="animate-pulse text-cyan-400">|</span>
             </h2>
@@ -189,7 +189,7 @@ export const Hero = () => {
           {/* Value Proposition */}
           <motion.p
             variants={itemVariants}
-            className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light"
+            className="text-sm sm:text-base md:text-lg text-gray-400 max-w-prose mx-auto font-light"
           >
             Building intelligent solutions that bridge artificial intelligence with exceptional user experiences
           </motion.p>
@@ -200,25 +200,29 @@ export const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
           >
             {/* Primary CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
-                onClick={handleDownloadResume}
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </Button>
-              
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 transform hover:scale-105"
-                onClick={goToContact}
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Contact Me
-              </Button>
+            <div className="flex w-full flex-col sm:flex-row gap-4">
+              <div className="w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white border-0 shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
+                  onClick={handleDownloadResume}
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Resume
+                </Button>
+              </div>
+
+              <div className="w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="w-full sm:w-auto border-cyan-400/50 text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 transform hover:scale-105"
+                  onClick={goToContact}
+                >
+                  <Mail className="mr-2 h-5 w-5" />
+                  Contact Me
+                </Button>
+              </div>
             </div>
 
             {/* Animated Social Icons */}
