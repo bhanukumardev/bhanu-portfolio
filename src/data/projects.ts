@@ -6,6 +6,7 @@ import health from "../../assets/health-predictor.gif";
 import fraud from "../../assets/fraud-detection.gif";
 import sih from "../../assets/sih2025-logo.png";
 import newsscrapper from "../../assets/news-scrapper.gif";
+import fooddelivery from "../../assets/food-delivery.gif";
 
 export interface Project {
   title: string;
@@ -80,5 +81,13 @@ export const projects: Project[] = [
   image: newsscrapper,
     demo: "https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_uipath-uipathstudentcommunity-usckiit-activity-7386007620220006400-fzt5",
     github: "https://github.com/bhanukumardev/MinorProject_NewsHeadlineScrapper"
+  },
+  {
+    title: "QuickBite Food Delivery",
+    description: "Built at GDG (Google Developers Group) Society KIIT, Building Bad Event 2025. Modern food delivery PWA with React, TypeScript & Framer Motion. Features interactive modals, real-time tracking, smart location services, and smooth animations. 30-min delivery promise.",
+    tags: ["React", "TypeScript", "Framer Motion", "PWA", "Tailwind CSS"],
+    image: fooddelivery,
+    demo: "https://quickbite-motion-delight.vercel.app/",
+    github: "https://github.com/bhanukumardev/food-delivery-quickbite"
   }
 ];
