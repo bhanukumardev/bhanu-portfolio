@@ -18,8 +18,18 @@ import visionBharatLogo from "../../assets/vision-bharat-trust.jpg";
 import pinnacleLogo from "../../assets/pinnacle-logo.png";
 import internshipstudioLogo from "../../assets/internshipstudio-logo.png";
 import viksitLogo from "../../assets/viksit.png";
+import gdgKiitLogo from "../../assets/gdgkiit_logo.jpg";
 
 export const certifications: Certification[] = [
+  {
+    id: "building-bad",
+    title: "Certificate of Participation: Building Bad (GDG KIIT 2025)",
+    issuer: "GDG KIIT",
+    date: "Issued Nov 2025",
+    logo: gdgKiitLogo,
+    skills: ["Web Application Development", "Teamwork", "Innovation", "React", "TypeScript", "Problem Solving"],
+    credential: "https://drive.google.com/file/d/18VqRHCPN7wtDsu7XRNcowSLy8uF9rUK0/view"
+  },
   {
     id: "usc-automation",
     title: "Empowering Automation for Everyone",

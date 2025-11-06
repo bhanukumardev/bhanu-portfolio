@@ -6,6 +6,8 @@ import codealphaLogo from "../../assets/codealpha-logo.png";
 import internshipstudioLogo from "../../assets/internshipstudio-logo.png";
 import pinnacleLogo from "../../assets/pinnacle-logo.png";
 import kiitLogo from "../../assets/kiit-logo.png";
+import gdgKiitLogo from "../../assets/gdgkiit_logo.jpg";
+import kiitIqacLogo from "../../assets/kiit-iqac.jpg";
 
 interface Experience {
   id: string;
@@ -20,6 +22,26 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
+  {
+    id: "building-bad",
+    logo: gdgKiitLogo,
+    title: "Participant | Building Bad Event",
+    company: "GDG KIIT",
+    duration: "Nov 2025",
+    location: "Bhubaneswar, Odisha, India · On-site",
+    description: [
+      "Developed QuickBite Food Delivery (PWA) during Building Bad 2025 as part of Team Litti Chokha.",
+      "Applied React, TypeScript, Framer Motion, and Tailwind CSS in a fast-paced, collaborative event.",
+      "Delivered live demo and received certificate for creativity, teamwork, and problem-solving.",
+      "Mentored by Dr. Raghunath Dey and Srija Bhattacharya throughout the development process.",
+      "Built the project with focus on responsive design, smooth animations, and modern web technologies."
+    ],
+    skills: ["Web Application Development", "Innovation", "React", "TypeScript", "Framer Motion", "Tailwind CSS", "PWA"],
+    links: {
+      demo: "https://quickbite-motion-delight.vercel.app/",
+      github: "https://github.com/bhanukumardev/food-delivery-quickbite"
+    }
+  },
   {
     id: "usc-rpa",
     logo: uscKiitLogo,
@@ -134,7 +156,7 @@ const experiences: Experience[] = [
   },
   {
     id: "viksit-bharat",
-  logo: kiitLogo,
+  logo: kiitIqacLogo,
     title: "Participant – Viksit Bharat @2047 Series Workshop",
     company: "KIIT - Kalinga Institute of Industrial Technology",
     duration: "Apr 2024",
