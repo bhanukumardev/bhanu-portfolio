@@ -20,53 +20,46 @@ export const AboutSection = () => {
             </h2>
             
             <div className="space-y-4 text-muted-foreground">
-              <p className="text-lg" data-aos="fade-up" data-aos-delay="200">
-                <strong className="text-foreground">Hi, I'm Bhanu Kumar Dev</strong> — a passionate 3rd Year B.Tech Computer Science & Systems Engineering (CSSE) 
-                student at KIIT University, Bhubaneswar, with a strong focus on Artificial Intelligence, Machine Learning, and Full-Stack Development.
+              <p className="text-base leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                <strong className="text-foreground">Hi, I'm Bhanu Kumar Dev</strong> — a passionate 3rd Year B.Tech CSSE student at KIIT University, 
+                Bhubaneswar, focused on AI/ML and Full-Stack Development.
               </p>
 
-              <div data-aos="fade-up" data-aos-delay="260">
-                <h3 className="text-lg font-semibold text-foreground mb-2">🎯 What Drives Me</h3>
-                <p>
-                  I believe in building intelligent systems that think, learn, and evolve. My journey in tech is fueled by curiosity and a 
-                  commitment to solving real-world problems through innovative technology solutions.
+              <div data-aos="fade-up" data-aos-delay="260" className="space-y-2">
+                <h3 className="text-base font-semibold text-foreground flex items-center gap-2">
+                  <span>🎯</span> What Drives Me
+                </h3>
+                <p className="text-sm leading-relaxed">
+                  Building intelligent systems that think, learn, and evolve. Driven by curiosity and solving real-world problems through innovative tech.
                 </p>
               </div>
 
-              <div data-aos="fade-up" data-aos-delay="320">
-                <h3 className="text-lg font-semibold text-foreground mb-3">🚀 Current Focus</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <div className="flex flex-col sm:flex-row sm:gap-2">
-                      <span className="text-primary font-semibold whitespace-nowrap">🤖 AI/ML Development:</span>
-                      <span>Crafting intelligent systems with predictive capabilities and LLM integration</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="flex flex-col sm:flex-row sm:gap-2">
-                      <span className="text-primary font-semibold whitespace-nowrap">🌐 Full-Stack Engineering:</span>
-                      <span>Building production-ready web applications from concept to deployment</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="flex flex-col sm:flex-row sm:gap-2">
-                      <span className="text-primary font-semibold whitespace-nowrap">🏆 Hackathon Participation:</span>
-                      <span>Actively competing and getting shortlisted in national-level tech challenges (Smart India Hackathon 2025)</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="flex flex-col sm:flex-row sm:gap-2">
-                      <span className="text-primary font-semibold whitespace-nowrap">🔧 RPA & Automation:</span>
-                      <span>Domain member at UiPath Student Community @ KIIT, working on automation projects</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="flex flex-col sm:flex-row sm:gap-2">
-                      <span className="text-primary font-semibold whitespace-nowrap">☁️ Cloud Deployment:</span>
-                      <span>Deploying scalable solutions on Vercel, Netlify, and Railway</span>
-                    </div>
-                  </li>
-                </ul>
+              <div data-aos="fade-up" data-aos-delay="320" className="space-y-2">
+                <h3 className="text-base font-semibold text-foreground flex items-center gap-2">
+                  <span>🚀</span> Current Focus
+                </h3>
+                <div className="grid grid-cols-1 gap-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary font-medium min-w-fit">🤖 AI/ML:</span>
+                    <span className="leading-relaxed">Predictive systems & LLM integration</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary font-medium min-w-fit">🌐 Full-Stack:</span>
+                    <span className="leading-relaxed">Production-ready web apps, concept to deployment</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary font-medium min-w-fit">🏆 Hackathons:</span>
+                    <span className="leading-relaxed">National-level challenges (SIH 2025 shortlisted)</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary font-medium min-w-fit">🔧 RPA:</span>
+                    <span className="leading-relaxed">UiPath Student Community @ KIIT</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary font-medium min-w-fit">☁️ Cloud:</span>
+                    <span className="leading-relaxed">Vercel, Netlify, Railway deployments</span>
+                  </div>
+                </div>
               </div>
             </div>
 
