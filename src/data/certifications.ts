@@ -19,6 +19,7 @@ import pinnacleLogo from "../../assets/pinnacle-logo.png";
 import internshipstudioLogo from "../../assets/internshipstudio-logo.png";
 import viksitLogo from "../../assets/viksit.png";
 import gdgKiitLogo from "../../assets/gdgkiit_logo.jpg";
+import kiitLogo from "../../assets/kiit-logo.png";
 
 export const certifications: Certification[] = [
   {
@@ -56,6 +57,15 @@ export const certifications: Certification[] = [
   logo: kiitEcellLogo,
     skills: ["Event Participation", "Entrepreneurship", "Team Collaboration"],
     credential: "https://drive.google.com/file/d/1C0xAfyPkhZ0_O9dHunGT7IJcvL9x5EHH/view?usp=drivesdk"
+  },
+  {
+    id: "smart-india-hackathon",
+    title: "Smart India Hackathon 2025 (Internal Hackathon Participation)",
+    issuer: "KIIT - Kalinga Institute of Industrial Technology",
+    date: "Issued Sep 2025 • Credential ID: SIH25 / 2328162",
+    logo: kiitLogo,
+    skills: ["Innovation", "Problem Solving", "Teamwork", "Hackathon Participation"],
+    credential: "https://drive.google.com/drive/u/1/folders/1SE2g4_NnQnEZSNAXab04CVy2UU_QTOVC"
   },
   {
     id: "thinkfest",
