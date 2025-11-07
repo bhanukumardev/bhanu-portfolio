@@ -14,8 +14,8 @@ export const ProjectsSection = () => {
           className="text-center mb-16"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">🚀 Projects</span>
@@ -30,13 +30,12 @@ export const ProjectsSection = () => {
             <motion.div
               key={project.title}
               className="card-glow glass-effect rounded-xl overflow-hidden hover-lift flex flex-col"
-              initial={{ opacity: 0, y: 50, scale: 0.9 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, amount: 0.2 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3, margin: "0px 0px -100px 0px" }}
               transition={{ 
-                duration: 0.5, 
-                delay: index * 0.1,
-                ease: "easeOut"
+                duration: 0.4,
+                ease: [0.25, 0.46, 0.45, 0.94]
               }}
             >
               <div className="aspect-video overflow-hidden bg-muted">
