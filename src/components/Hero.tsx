@@ -125,7 +125,7 @@ export const Hero = () => {
   };
 
   return (
-  <section className="relative w-screen min-h-[85vh] flex items-center justify-center overflow-visible pt-28">
+  <section className="relative w-screen min-h-[85vh] flex items-center justify-center overflow-visible pt-20">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-cyan-900/30" />
       
