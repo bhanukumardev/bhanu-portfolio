@@ -35,26 +35,36 @@ export const AboutSection = () => {
 
               <div data-aos="fade-up" data-aos-delay="320">
                 <h3 className="text-lg font-semibold text-foreground mb-3">🚀 Current Focus</h3>
-                <ul className="space-y-2">
-                  <li className="flex gap-2">
-                    <span className="text-primary font-semibold">🤖 AI/ML Development:</span>
-                    <span>Crafting intelligent systems with predictive capabilities and LLM integration</span>
+                <ul className="space-y-3">
+                  <li>
+                    <div className="flex flex-col sm:flex-row sm:gap-2">
+                      <span className="text-primary font-semibold whitespace-nowrap">🤖 AI/ML Development:</span>
+                      <span>Crafting intelligent systems with predictive capabilities and LLM integration</span>
+                    </div>
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary font-semibold">🌐 Full-Stack Engineering:</span>
-                    <span>Building production-ready web applications from concept to deployment</span>
+                  <li>
+                    <div className="flex flex-col sm:flex-row sm:gap-2">
+                      <span className="text-primary font-semibold whitespace-nowrap">🌐 Full-Stack Engineering:</span>
+                      <span>Building production-ready web applications from concept to deployment</span>
+                    </div>
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary font-semibold">🏆 Hackathon Participation:</span>
-                    <span>Actively competing and getting shortlisted in national-level tech challenges (Smart India Hackathon 2025)</span>
+                  <li>
+                    <div className="flex flex-col sm:flex-row sm:gap-2">
+                      <span className="text-primary font-semibold whitespace-nowrap">🏆 Hackathon Participation:</span>
+                      <span>Actively competing and getting shortlisted in national-level tech challenges (Smart India Hackathon 2025)</span>
+                    </div>
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary font-semibold">🔧 RPA & Automation:</span>
-                    <span>Domain member at UiPath Student Community @ KIIT, working on automation projects</span>
+                  <li>
+                    <div className="flex flex-col sm:flex-row sm:gap-2">
+                      <span className="text-primary font-semibold whitespace-nowrap">🔧 RPA & Automation:</span>
+                      <span>Domain member at UiPath Student Community @ KIIT, working on automation projects</span>
+                    </div>
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary font-semibold">☁️ Cloud Deployment:</span>
-                    <span>Deploying scalable solutions on Vercel, Netlify, and Railway</span>
+                  <li>
+                    <div className="flex flex-col sm:flex-row sm:gap-2">
+                      <span className="text-primary font-semibold whitespace-nowrap">☁️ Cloud Deployment:</span>
+                      <span>Deploying scalable solutions on Vercel, Netlify, and Railway</span>
+                    </div>
                   </li>
                 </ul>
               </div>
