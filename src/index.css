@@ -68,6 +68,14 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
+    /* Hide scrollbar for all elements */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera for all elements */
+  *::-webkit-scrollbar {
+    display: none;
   }
 
   /* Ensure images are responsive by default */
@@ -77,9 +85,9 @@ All colors MUST be HSL.
     display: block;
   }
 
-  /* Prevent horizontal overflow inside sections by default (safe and conservative) */
+  /* Remove overflow properties from sections to prevent individual scrollbars */
   section {
-    overflow-x: hidden;
+    overflow: visible;
   }
 
   @media (max-width: 768px) {
@@ -96,6 +104,7 @@ All colors MUST be HSL.
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden; /* prevent horizontal scrolling caused by overflowing children */
+    overflow-y: auto; /* allow vertical scrolling */
   }
 
   html {
