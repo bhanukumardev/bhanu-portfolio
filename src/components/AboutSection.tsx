@@ -16,28 +16,48 @@ export const AboutSection = () => {
           </div>
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold" data-aos="fade-right" data-aos-delay="140">
-              <span className="text-gradient">About Me</span>
+              <span className="text-gradient">📖 About Me</span>
             </h2>
             
             <div className="space-y-4 text-muted-foreground">
               <p className="text-lg" data-aos="fade-up" data-aos-delay="200">
-                <strong className="text-foreground">Hi, I'm Bhanu Kumar Dev!</strong>
+                <strong className="text-foreground">Hi, I'm Bhanu Kumar Dev</strong> — a passionate 3rd Year B.Tech Computer Science & Systems Engineering (CSSE) 
+                student at KIIT University, Bhubaneswar, with a strong focus on Artificial Intelligence, Machine Learning, and Full-Stack Development.
               </p>
 
-              <p data-aos="fade-up" data-aos-delay="260">
-                My portfolio features AI and ML projects, including deep learning, NLP, and data-driven solutions, demonstrating my skills in
-                building intelligent applications and solving complex problems.
-              </p>
+              <div data-aos="fade-up" data-aos-delay="260">
+                <h3 className="text-lg font-semibold text-foreground mb-2">🎯 What Drives Me</h3>
+                <p>
+                  I believe in building intelligent systems that think, learn, and evolve. My journey in tech is fueled by curiosity and a 
+                  commitment to solving real-world problems through innovative technology solutions.
+                </p>
+              </div>
 
-              <p data-aos="fade-up" data-aos-delay="320">
-                I build full-stack web applications and deploy ML models to production using modern tools like React, TypeScript, Python,
-                Flask, and Streamlit. I enjoy collaborating in hackathons and building practical solutions that make an impact.
-              </p>
-
-              <p data-aos="fade-up" data-aos-delay="380">
-                Recently selected as an RPA & AI Domain Member at USC.KIIT (Oct 2025). I focus on practical AI, explainability, and
-                automation to solve real-world problems.
-              </p>
+              <div data-aos="fade-up" data-aos-delay="320">
+                <h3 className="text-lg font-semibold text-foreground mb-3">🚀 Current Focus</h3>
+                <ul className="space-y-2">
+                  <li className="flex gap-2">
+                    <span className="text-primary font-semibold">🤖 AI/ML Development:</span>
+                    <span>Crafting intelligent systems with predictive capabilities and LLM integration</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-semibold">🌐 Full-Stack Engineering:</span>
+                    <span>Building production-ready web applications from concept to deployment</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-semibold">🏆 Hackathon Participation:</span>
+                    <span>Actively competing and getting shortlisted in national-level tech challenges (Smart India Hackathon 2025)</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-semibold">🔧 RPA & Automation:</span>
+                    <span>Domain member at UiPath Student Community @ KIIT, working on automation projects</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-primary font-semibold">☁️ Cloud Deployment:</span>
+                    <span>Deploying scalable solutions on Vercel, Netlify, and Railway</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div className="flex flex-wrap gap-3 pt-4">
