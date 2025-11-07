@@ -8,7 +8,7 @@ export const AboutSection = () => {
           <div className="relative" data-aos="zoom-in" data-aos-delay="80">
             <div className="aspect-square rounded-2xl overflow-hidden card-glow glass-effect p-4">
               <img
-                src="/bhanu-profile.jpg"
+                src="/bhanu-portfolio/bhanu-profile.jpg"
                 alt="Bhanu Kumar Dev"
                 className="w-full h-full object-contain"
               />
