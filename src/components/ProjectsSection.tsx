@@ -3,51 +3,41 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 
-const containerVariants = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.12,
-    },
-  },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 20, scale: 0.98 },
-  show: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
 export const ProjectsSection = () => {
   return (
-    <motion.section
+    <section
       id="projects"
       className="py-20 px-4 bg-gradient-to-b from-muted/20 to-background"
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.18 }}
-      variants={containerVariants}
     >
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-gradient">🚀 Projects</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Real-world applications and innovative solutions
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
               className="card-glow glass-effect rounded-xl overflow-hidden hover-lift flex flex-col"
-              variants={cardVariants}
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ 
+                duration: 0.5, 
+                delay: index * 0.1,
+                ease: "easeOut"
+              }}
             >
               <div className="aspect-video overflow-hidden bg-muted">
                 <img
@@ -119,6 +109,6 @@ export const ProjectsSection = () => {
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
