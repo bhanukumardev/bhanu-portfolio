@@ -55,7 +55,7 @@ export const projects: Project[] = [
     description: "AI-powered health prediction app with React, FastAPI, PostgreSQL, ML models, and Groq LLM chatbot. Full-stack AI health prediction with ML disease models and intelligent chatbot. Deployed on Vercel.",
     tags: ["React", "FastAPI", "PostgreSQL", "ML", "Groq LLM"],
   image: health,
-    demo: "https://health-symptom-predictor-vbrf.vercel.app/",
+    demo: "https://health-symptom-predictor.vercel.app/",
     github: "https://github.com/bhanukumardev/health-symptom-predictor"
   },
   {
