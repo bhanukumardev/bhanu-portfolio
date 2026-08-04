@@ -54,6 +54,7 @@ const experiences: Experience[] = [
       "Implemented logistic regression and random forest algorithms to enhance model building and evaluation skills."
     ],
     skills: ["Python", "Machine Learning", "Data Preprocessing", "Feature Engineering", "Scikit-learn", "Model Evaluation"],
+    credentialLink: "https://drive.google.com/drive/folders/1Xp9BVvLpssitb_EadU8aa-YHrkw3sAm3?usp=drive_link",
     links: {
       github: "https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel"
     }
@@ -69,7 +70,8 @@ const experiences: Experience[] = [
       "Developed an AI Translator App, a GenAI Resume Parser, and a Teachable Machine Project.",
       "Enhanced skills in machine learning and web app deployment."
     ],
-    skills: ["Python", "AI", "Streamlit", "Flask", "OpenAI", "ollama", "Teachable Machine"]
+    skills: ["Python", "AI", "Streamlit", "Flask", "OpenAI", "ollama", "Teachable Machine"],
+    credentialLink: "https://drive.google.com/drive/folders/1XdjLjoRprX049f-aUZ8ku94CuJ-2BNJh?usp=drive_link"
   },
   {
     id: "internship-studio",
@@ -81,7 +83,8 @@ const experiences: Experience[] = [
     description: [
       "Implemented core data structures in C++ and solved algorithmic problems with a focus on time/space complexity optimization."
     ],
-    skills: ["C++", "Data Structures", "Algorithms", "Problem Solving", "Object-Oriented Programming"]
+    skills: ["C++", "Data Structures", "Algorithms", "Problem Solving", "Object-Oriented Programming"],
+    credentialLink: "https://drive.google.com/drive/folders/1Oq-xNoZIVdYgjvBa48z5MGI1CeJVnskO?usp=drive_link"
   },
   {
     id: "codesprint",
@@ -232,14 +235,19 @@ export const ExperienceSection = () => {
                   {(exp.credentialLink || exp.links) && (
                     <div className="flex flex-wrap gap-4 pt-2">
                       {exp.credentialLink && (
-                        <a
-                          href={exp.credentialLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-primary hover:text-primary-glow transition-colors text-sm"
-                        >
-                          Credential <ExternalLink className="w-4 h-4" />
-                        </a>
+                        <div className="rounded-lg border border-primary/15 bg-primary/5 px-4 py-3">
+                          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-2">
+                            Credential
+                          </p>
+                          <a
+                            href={exp.credentialLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary-glow transition-colors"
+                          >
+                            Open Certificate Folder <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </div>
                       )}
                       {exp.links?.demo && (
                         <a
