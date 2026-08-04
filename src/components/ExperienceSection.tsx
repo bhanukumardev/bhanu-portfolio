@@ -1,17 +1,8 @@
 import { Briefcase, ExternalLink } from "lucide-react";
-import uscKiitLogo from "../../assets/usc-kiit-logo.png";
-import kiitEcellLogo from "../../assets/kiit-ecell-logo.png";
-import adobeLogo from "../../assets/adobe-logo.png";
 import codealphaLogo from "../../assets/codealpha-logo.png";
 import internshipstudioLogo from "../../assets/internshipstudio-logo.png";
 import pinnacleLogo from "../../assets/pinnacle-logo.png";
-import kiitLogo from "../../assets/kiit-logo.png";
-import gdgKiitLogo from "../../assets/gdgkiit_logo.jpg";
-import kiitIqacLogo from "../../assets/kiit-iqac.jpg";
 import aenexzLogo from "../../assets/Aenexz Tech Logo.jpg";
-import etLogo from "../../assets/Economics Times Logo.jpeg";
-import ghciLogo from "../../assets/AnitaB.org India.webp";
-import kitpd2s from "../../assets/kitpd2s-society.jpg";
 
 interface Experience {
   id: string;
@@ -44,7 +35,7 @@ const experiences: Experience[] = [
   },
   {
     id: "codealpha",
-  logo: codealphaLogo,
+    logo: codealphaLogo,
     title: "Machine Learning Intern",
     company: "CodeAlpha",
     duration: "May 2025 - Aug 2025",
@@ -61,7 +52,7 @@ const experiences: Experience[] = [
   },
   {
     id: "pinnacle",
-  logo: pinnacleLogo,
+    logo: pinnacleLogo,
     title: "Artificial Intelligence Intern",
     company: "Pinnacle Labs",
     duration: "May 2025 - Jun 2025",
@@ -75,7 +66,7 @@ const experiences: Experience[] = [
   },
   {
     id: "internship-studio",
-  logo: internshipstudioLogo,
+    logo: internshipstudioLogo,
     title: "C++ & Data Structures Intern",
     company: "Internship Studio",
     duration: "Jun 2024 - Jul 2024",
@@ -85,91 +76,6 @@ const experiences: Experience[] = [
     ],
     skills: ["C++", "Data Structures", "Algorithms", "Problem Solving", "Object-Oriented Programming"],
     credentialLink: "https://drive.google.com/drive/folders/1Oq-xNoZIVdYgjvBa48z5MGI1CeJVnskO?usp=drive_link"
-  },
-  {
-    id: "codesprint",
-  logo: uscKiitLogo,
-    title: "Participant – 45-Day Coding Challenge (CodeSprint 2.0)",
-    company: "USC.KIIT",
-    duration: "Jun 2024 - Jul 2024",
-    location: "Bhubaneswar, Odisha, India",
-    description: [
-      "Participated in an intensive 45-day coding challenge focused on Data Structures and Algorithms.",
-      "Solved daily coding problems covering arrays, linked lists, trees, graphs, dynamic programming, and more.",
-      "Enhanced problem-solving skills and competitive programming abilities.",
-      "Built consistency and discipline in daily coding practice."
-    ],
-    skills: ["Data Structures", "Algorithms", "Problem Solving", "Competitive Programming", "C++", "Java"]
-  },
-  {
-    id: "usc-rpa",
-    logo: uscKiitLogo,
-    title: "RPA & AI Domain Member",
-    company: "USC.KIIT",
-    duration: "Oct 2025 - Present",
-    location: "Bhubaneswar, Odisha, India",
-    description: [
-      "Collaborating with engineering peers on Robotic Process Automation (RPA) and AI initiatives.",
-      "Implementing automation workflows and driving technology-centric solutions within the student community."
-    ],
-    skills: ["UiPath Studio", "RPA", "Automation", "AI Integration", "Workflow Design"]
-  },
-  {
-    id: "hackdays-kiit",
-    logo: kitpd2s,
-    title: "Organizing Committee & Event Management Member (Volunteering)",
-    company: "KITPD2S Society",
-    duration: "Sep 2025 - Present",
-    location: "Bhubaneswar, Odisha, India",
-    description: [
-      "Served on the organizing committee for HackDays @ KIIT – Build w/ Gemini (official MLH mini-hackathon).",
-      "Managed event coordination, floor operations, and technical support.",
-      "Awarded Certificate of Appreciation."
-    ],
-    skills: ["Leadership", "Event Management", "Team Coordination", "Community Building"],
-    credentialLink: "https://drive.google.com/file/d/1bNBOL2rGgqNxseVwW6tUU6-1aVC2PAb-/view?usp=drive_link"
-  },
-  {
-    id: "et-ai-hackathon-2026",
-  logo: etLogo,
-    title: "Semi-Finalist - ET-AI Hackathon 2026",
-    company: "The Economic Times",
-    duration: "Aug 2026",
-    location: "Vercel · Remote",
-    description: [
-      "Advanced as a Semi-Finalist by building Money Mentor, an AI-driven financial mentor application deployed to Vercel.",
-      "Designed the solution to help users make smarter financial decisions using generative AI and practical product thinking."
-    ],
-    skills: ["Generative AI", "Problem Solving", "Competitive Analysis", "Technical Assessment"],
-    credentialLink: "https://drive.google.com/file/d/1Mz2fLnESpnhMynxPtF5vo5XB_bf64Bzd/view?usp=drive_link"
-  },
-  {
-    id: "ghci-2025",
-  logo: ghciLogo,
-    title: "GHCI 2025 Hackathon - 'Unbound with GenAI'",
-    company: "AnitaB.org India",
-    duration: "Dec 2025",
-    location: "India",
-    description: [
-      "Participated in the Grace Hopper Celebration of India (GHCI) 2025 Hackathon.",
-      "Collaborated with Team 'Saathi' to explore cutting-edge GenAI applications and develop innovative tech solutions focused on real-world impact."
-    ],
-    skills: ["Generative AI", "Team Collaboration", "Rapid Prototyping"]
-  },
-  {
-    id: "viksit-bharat",
-  logo: kiitIqacLogo,
-    title: "Participant – Viksit Bharat @2047 Series Workshop",
-    company: "KIIT - Kalinga Institute of Industrial Technology",
-    duration: "Apr 2024",
-    location: "Bhubaneswar, Odisha, India",
-    description: [
-      "Participated in the Viksit Bharat @2047 series workshop organized by IQAC, KIIT.",
-      "Engaged in discussions and activities focused on India's development vision for 2047.",
-      "Explored innovation, technology, and nation-building themes.",
-      "Gained insights into sustainable development and future-ready skills."
-    ],
-    skills: ["Leadership", "Innovation", "Sustainable Development", "Event Participation"]
   }
 ];
 
