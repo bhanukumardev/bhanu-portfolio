@@ -259,16 +259,6 @@ export const ExperienceSection = () => {
                           View Demo <ExternalLink className="w-4 h-4" />
                         </a>
                       )}
-                      {exp.links?.github && (
-                        <a
-                          href={exp.links.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-primary hover:text-primary-glow transition-colors text-sm"
-                        >
-                          GitHub <ExternalLink className="w-4 h-4" />
-                        </a>
-                      )}
                     </div>
                   )}
                 </div>
