@@ -20,6 +20,12 @@ import internshipstudioLogo from "../../assets/internshipstudio-logo.png";
 import viksitLogo from "../../assets/viksit.png";
 import gdgKiitLogo from "../../assets/gdgkiit_logo.jpg";
 import kiitLogo from "../../assets/kiit-logo.png";
+import techIcon from "../../assets/tech-icon.svg";
+import ghciLogo from "../../assets/AnitaB.org India.webp";
+import courseraLogo from "../../assets/Coursera Logo.png";
+import eurekaLogo from "../../assets/Eureka Event-Codefest'26.webp";
+import excelrLogo from "../../assets/Excelr Logo.jpg";
+import awsLogo from "../../assets/AWS logo.svg";
 
 export const certifications: Certification[] = [
   {
@@ -30,6 +36,60 @@ export const certifications: Certification[] = [
     logo: gdgKiitLogo,
     skills: ["Web Application Development", "Teamwork", "Innovation", "React", "TypeScript", "Problem Solving"],
     credential: "https://drive.google.com/file/d/18VqRHCPN7wtDsu7XRNcowSLy8uF9rUK0/view"
+  },
+  {
+    id: "agentic-ai-training",
+    title: "Agentic AI - 70 Hours Professional Training",
+    issuer: "ExcelR & KIIT University",
+    date: "Issued Aug 2026",
+    logo: excelrLogo,
+    skills: ["Agentic AI", "LLMs", "Generative AI", "Problem Solving"],
+    credential: "https://drive.google.com/file/d/1KBkgT6GPJFAL2uKTSBMwf7e7hKHZiDnw/view?usp=drive_link"
+  },
+  {
+    id: "aws-academy-graduate",
+    title: "AWS Academy Graduate - Microservices and CI/CD Pipeline Builder",
+    issuer: "Amazon Web Services (AWS)",
+    date: "Issued Aug 2026",
+    logo: awsLogo,
+    skills: ["AWS", "Microservices", "CI/CD", "Cloud Computing"],
+    credential: "https://www.credly.com/badges/f7ba31c7-6366-46a9-879f-430bf41e06e6"
+  },
+  {
+    id: "codefest-eureka-2026",
+    title: "Certificate of Excellence - Eureka Event (Codefest'26)",
+    issuer: "IIT (BHU) Varanasi",
+    date: "Issued Aug 2026",
+    logo: eurekaLogo,
+    skills: ["Problem Solving", "Competitive Analysis", "Technical Assessment"],
+    credential: "https://drive.google.com/file/d/1m0GabqNY7k8DTWR_AArlFQ5SAXgNUfDg/view?usp=drive_link"
+  },
+  {
+    id: "business-for-good",
+    title: "Business for Good: Fundamentals of Corporate Responsibility",
+    issuer: "London Business School (via Coursera)",
+    date: "Issued Feb 2026",
+    logo: courseraLogo,
+    skills: ["Corporate Responsibility", "Business Ethics", "Sustainability"],
+    credential: "https://www.coursera.org/account/accomplishments/verify/3R046I2QZGC8?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+  },
+  {
+    id: "corporate-governance",
+    title: "Corporate Governance",
+    issuer: "Coursera",
+    date: "Issued Feb 2026",
+    logo: courseraLogo,
+    skills: ["Governance", "Compliance", "Corporate Ethics"],
+    credential: "https://www.coursera.org/account/accomplishments/verify/AS8ZLD09W3EZ?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+  },
+  {
+    id: "ethical-decision-making",
+    title: "Ethical Decision Making for Success in the Tech Industry",
+    issuer: "University of Colorado Boulder (via Coursera)",
+    date: "Issued Feb 2026",
+    logo: courseraLogo,
+    skills: ["Ethical Decision Making", "Professional Responsibility", "Technology Ethics"],
+    credential: "https://www.coursera.org/account/accomplishments/verify/NMDGMDTTGRF0?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
   },
   {
     id: "usc-automation",
@@ -48,6 +108,24 @@ export const certifications: Certification[] = [
   logo: adobeLogo,
     skills: ["Event Participation", "Entrepreneurship", "Team Collaboration"],
     credential: "https://unstop.com/certificate-preview/3b96f546-c7dc-4508-9ab7-aac836dcf088"
+  },
+  {
+    id: "ghci-2025",
+    title: "GHCI 2025 Hackathon - 'Unbound with GenAI'",
+    issuer: "AnitaB.org India",
+    date: "Issued Dec 2025",
+  logo: ghciLogo,
+    skills: ["Generative AI", "Team Collaboration", "Rapid Prototyping"],
+    credential: "https://www.verix.io/credential/83331756-eced-4d25-902d-e17dfdb901d9"
+  },
+  {
+    id: "hackdays-kiit",
+    title: "Organizing Committee Member - HackDays @ KIIT (Build w/ Gemini)",
+    issuer: "KITPD2S Society & MLH (Major League Hacking)",
+    date: "Issued Dec 2025",
+  logo: kitpd2s,
+    skills: ["Leadership", "Event Management", "Team Coordination", "Community Building"],
+    credential: "https://drive.google.com/file/d/1bNBOL2rGgqNxseVwW6tUU6-1aVC2PAb-/view?usp=drive_link"
   },
   {
     id: "esummit",

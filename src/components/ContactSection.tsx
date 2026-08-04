@@ -46,7 +46,7 @@ export const ContactSection = () => {
             rel="noopener noreferrer"
             className="card-glow glass-effect p-6 rounded-xl hover-lift text-center"
             data-aos="fade-up"
-            data-aos-delay="240"
+            data-aos-delay="220"
           >
             <Github className="w-12 h-12 mx-auto mb-4 text-primary" />
             <h3 className="font-bold mb-2">GitHub</h3>

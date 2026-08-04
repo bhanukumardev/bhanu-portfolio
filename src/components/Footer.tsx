@@ -30,8 +30,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4 text-gradient">Bhanu Kumar Dev</h3>
             <p className="text-muted-foreground mb-4">
-              AI/ML enthusiast and full-stack developer passionate about creating innovative solutions
-              and pushing the boundaries of technology.
+              AI/ML Developer & Full-Stack Engineer focused on building innovative solutions across cloud, AI, and product engineering.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
@@ -113,7 +112,7 @@ export const Footer = () => {
             <span className="text-primary font-semibold">Bhanu Kumar Dev</span>
           </p>
           <p className="text-sm text-muted-foreground">
-            © {currentYear} All rights reserved. | Last updated: October 2025
+            © {currentYear} All rights reserved. | Last updated: August 2026
           </p>
         </div>
       </div>

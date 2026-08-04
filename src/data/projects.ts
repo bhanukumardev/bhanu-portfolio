@@ -7,6 +7,9 @@ import fraud from "../../assets/fraud-detection.gif";
 import sih from "../../assets/sih2025-logo.png";
 import newsscrapper from "../../assets/news-scrapper.gif";
 import fooddelivery from "../../assets/food-delivery.gif";
+import emotionRecognition from "../../assets/EmotionRecognition-EEG_Signal.jpg";
+import moneyMentor from "../../assets/Money Mentor.gif";
+import faqBot from "../../assets/E-Commerce FAQ Bot.png";
 
 export interface Project {
   title: string;
@@ -18,6 +21,27 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    title: "Emotion Recognition using EEG Signals",
+    description: "Implemented machine learning and deep learning algorithms to extract features from EEG brainwave data and classify emotional states. Developed as a core academic mini-project to explore affective computing.",
+    tags: ["Python", "Machine Learning", "Deep Learning"],
+  image: emotionRecognition,
+    github: "https://github.com/bhanukumardev/EmotionRecognition-EEG_Signal"
+  },
+  {
+    title: "Money Mentor – AI Financial Advisor",
+    description: "Built a full-stack, AI-driven financial mentor application for the Economic Times GenAI Hackathon 2026 (Semi-Finalist). Designed to help users make smarter financial decisions and plan their journey to financial independence.",
+    tags: ["Generative AI", "Full-Stack Development", "Vercel"],
+  image: moneyMentor,
+    github: "https://github.com/bhanukumardev/Money-Mentor"
+  },
+  {
+    title: "Agentic AI E-Commerce FAQ Bot",
+    description: "Developed an autonomous Agentic AI Capstone Project featuring an intelligent e-commerce FAQ bot. Leveraged advanced LLM workflows to build a context-aware system for rapid user query resolution.",
+    tags: ["Python", "LangGraph", "ChromaDB", "Streamlit"],
+  image: faqBot,
+    github: "https://github.com/bhanukumardev/Agentic-AI-Capstone-Project"
+  },
   {
     title: "GenAI Resume Parser",
     description: "AI-powered resume parser using Python, Flask, OpenAI, and Ollama. Parse resumes instantly with AI. Try the live demo or view the code.",

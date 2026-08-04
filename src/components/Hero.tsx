@@ -91,7 +91,7 @@ const BackgroundParticles = () => {
 };
 
 export const Hero = () => {
-  const typedText = useTypingAnimation("AI/ML Developer & Full-Stack Engineer", 80);
+  const typedText = useTypingAnimation("AI/ML Developer & Full-Stack Engineer | Building Innovative Solutions", 70);
 
   const scrollToNext = () => {
     window.scrollTo({
@@ -191,7 +191,7 @@ export const Hero = () => {
             variants={itemVariants}
             className="text-base sm:text-lg md:text-xl text-gray-300 max-w-prose mx-auto font-light px-2"
           >
-            Building intelligent solutions that bridge artificial intelligence with exceptional user experiences
+            Architecting impactful technology solutions by blending modern software engineering with advanced artificial intelligence.
           </motion.p>
 
           {/* CTA Buttons and Social Icons */}

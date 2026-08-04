@@ -10,76 +10,68 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     id: "programming",
-    title: "Programming Languages",
+    title: "Core",
     icon: <Code className="w-6 h-6" />,
-    skills: ["Python", "Java", "C++", "C", "JavaScript", "Shell Scripting"]
+    skills: ["C++", "Java", "Python", "JavaScript (ES6+)", "Data Structures & Algorithms"]
   },
   {
     id: "ai-ml",
-    title: "AI / Machine Learning",
+    title: "AI / ML",
     icon: <Brain className="w-6 h-6" />,
     skills: [
-      "Machine Learning",
-      "Deep Learning",
-      "Natural Language Processing (NLP)",
-      "Fraud Detection Systems",
-      "Data Analysis & Visualization",
-      "Scikit-Learn",
-      "Feature Engineering",
-      "Robotic Process Automation (RPA)",
-      "Workflow Automation",
-      "UiPath Studio",
-      "Agentic AI"
+      "Agentic AI",
+      "LLMs",
+      "TensorFlow",
+      "Scikit-learn",
+      "NLP",
+      "PyTorch"
     ]
   },
   {
     id: "frameworks",
-    title: "Frameworks & Libraries",
+    title: "Frontend",
     icon: <Wrench className="w-6 h-6" />,
     skills: [
-      "Flask",
-      "Streamlit",
-      "Pandas",
-      "OpenAI API",
-      "NI LabVIEW",
-      "AutoCAD",
-      "Xilinx Vivado"
+      "React.js",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS"
     ]
   },
   {
     id: "data-tools",
-    title: "Data & Tools",
+    title: "Backend",
     icon: <Database className="w-6 h-6" />,
     skills: [
-      "SQL, PL/SQL",
-      "Oracle Database",
-      "DBMS",
-      "Jupyter Notebook",
-      "Linux (Ubuntu)",
-      "Git"
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "REST APIs"
     ]
   },
   {
     id: "problem-solving",
-    title: "Coding & Problem Solving",
+    title: "Cloud & Tools",
     icon: <Trophy className="w-6 h-6" />,
     skills: [
-      "Competitive Coding (CodeSprint 2.0)",
-      "Algorithm Implementation (DS Lab)",
-      "Memory Management & Pointers (C)",
-      "Data Structures & Algorithms"
+      "AWS",
+      "CI/CD",
+      "Microservices",
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Figma"
     ]
   },
   {
     id: "soft-skills",
-    title: "Soft Skills",
+    title: "Databases",
     icon: <Users className="w-6 h-6" />,
     skills: [
-      "Teamwork & Collaboration",
-      "Problem Solving",
-      "Consistency & Time Management",
-      "Technical Communication",
-      "Analytical Thinking"
+      "PostgreSQL",
+      "MongoDB",
+      "Supabase",
+      "SQL"
     ]
   }
 ];
@@ -93,7 +85,7 @@ export const SkillsSection = () => {
             <span className="text-gradient">💪 Skills</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Technical expertise and competencies
+            Core stack, AI/ML, cloud, and supporting tools
           </p>
         </div>
 
@@ -129,6 +121,12 @@ export const SkillsSection = () => {
         <div className="mt-12 card-glow glass-effect p-6 rounded-xl text-center">
           <h3 className="text-xl font-bold mb-4">Events & Hackathons</h3>
           <div className="flex flex-wrap justify-center gap-3">
+            <span className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
+              ET-AI Hackathon 2026
+            </span>
+            <span className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
+              HackDays @ KIIT – Build w/ Gemini
+            </span>
             <span className="px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
               Pandora Paradox Hackathon (E-Summit 2025)
             </span>

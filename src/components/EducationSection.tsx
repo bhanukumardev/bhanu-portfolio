@@ -21,7 +21,7 @@ const education: Education[] = [
     school: "KIIT - Kalinga Institute of Industrial Technology",
     degree: "B.Tech, Computer Science & Systems Engineering",
     duration: "Aug 2023 – Aug 2027",
-    grade: "8.08",
+    grade: "8.25",
     activities: [
       "UiPath Student Developer Community",
       "Viksit Bharat @2047 Workshop",
@@ -29,8 +29,7 @@ const education: Education[] = [
       "AI/ML · Coding · Robotics Clubs"
     ],
     description: [
-      "Participated in the Viksit Bharat @2047 workshop organized by KIIT as part of the nationwide initiative to envision and contribute towards making India a developed nation by 2047. Engaged in discussions, brainstorming sessions, and activities focused on inclusive economic growth, sustainable development, technological innovation, and good governance. Collaborated with peers and faculty to generate ideas and solutions aligned with the vision of Viksit Bharat, emphasizing the role of youth in nation-building and the importance of strategic planning for India's future.",
-      "Engaged in a comprehensive curriculum focused on programming, artificial intelligence and machine learning, systems engineering, and data structures. Completed practical projects and labs in machine learning (Python, scikit-learn), digital design (Vivado, Verilog), industrial automation (NI LabVIEW), OS fundamentals (Ubuntu), and advanced data structures (C)."
+      "Pursuing a rigorous curriculum focused on AI, ML, Systems Engineering, and Advanced Data Structures. Executed hands-on technical labs involving scikit-learn, Verilog, and LabVIEW. Actively driving campus innovation through the UiPath Student Developer Community."
     ],
     skills: [
       "AI",
@@ -76,8 +75,7 @@ const education: Education[] = [
       "Paryavaran Ratna Award"
     ],
     description: [
-      "Completed 10th under CBSE with 93%. Recognized for environmental awareness and academic excellence.",
-      "Education is a once in a lifetime opportunity to open children's hearts and minds to the unbelievable wonder of the universe."
+      "Completed 10th under CBSE with 93%. Participated in national Olympiads (SOF, NSO, IMO), secured 1st position in English Essay Competition, and awarded the Paryavaran Ratna Award (1st position, South Asia region)."
     ],
     skills: []
   }

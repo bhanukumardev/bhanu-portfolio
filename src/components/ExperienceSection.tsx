@@ -8,6 +8,10 @@ import pinnacleLogo from "../../assets/pinnacle-logo.png";
 import kiitLogo from "../../assets/kiit-logo.png";
 import gdgKiitLogo from "../../assets/gdgkiit_logo.jpg";
 import kiitIqacLogo from "../../assets/kiit-iqac.jpg";
+import aenexzLogo from "../../assets/Aenexz Tech Logo.jpg";
+import etLogo from "../../assets/Economics Times Logo.jpeg";
+import ghciLogo from "../../assets/AnitaB.org India.webp";
+import kitpd2s from "../../assets/kitpd2s-society.jpg";
 
 interface Experience {
   id: string;
@@ -18,77 +22,25 @@ interface Experience {
   location: string;
   description: string[];
   skills: string[];
+  credentialLink?: string;
   links?: { demo?: string; github?: string };
 }
 
 const experiences: Experience[] = [
   {
-    id: "building-bad",
-    logo: gdgKiitLogo,
-    title: "Participant | Building Bad Event",
-    company: "GDG KIIT",
-    duration: "Nov 2025",
-    location: "Bhubaneswar, Odisha, India · On-site",
-    description: [
-      "Developed QuickBite Food Delivery (PWA) during Building Bad 2025 as part of Team Litti Chokha.",
-      "Applied React, TypeScript, Framer Motion, and Tailwind CSS in a fast-paced, collaborative event.",
-      "Delivered live demo and received certificate for creativity, teamwork, and problem-solving.",
-      "Mentored by Dr. Raghunath Dey and Srija Bhattacharya throughout the development process.",
-      "Built the project with focus on responsive design, smooth animations, and modern web technologies."
-    ],
-    skills: ["Web Application Development", "Innovation", "React", "TypeScript", "Framer Motion", "Tailwind CSS", "PWA"],
-    links: {
-      demo: "https://quickbite-motion-delight.vercel.app/",
-      github: "https://github.com/bhanukumardev/food-delivery-quickbite"
-    }
-  },
-  {
-    id: "usc-rpa",
-    logo: uscKiitLogo,
-    title: "RPA & AI Domain Member",
-    company: "USC.KIIT",
-    duration: "Oct 2025 - Present",
-    location: "Bhubaneswar, Odisha, India",
-    description: [
-      "Selected as a member in the RPA & AI domain of the University Students' Council, KIIT.",
-      "Collaborating with talented peers on Robotic Process Automation and Artificial Intelligence projects.",
-      "Engaged in workshops, hackathons, and tech-driven initiatives at KIIT University.",
-      "Contributing to the council's mission of driving innovation and technology-centric solutions for the campus community."
-    ],
-    skills: ["UiPath Studio", "RPA", "Automation", "AI Integration", "Workflow Design"]
-  },
-  {
-    id: "pandora",
-  logo: kiitEcellLogo,
-    title: "Hackathon Participant – Pandora Paradox (E-Summit 2025)",
-    company: "KIIT E-CELL",
-    duration: "Sep 2025",
-    location: "Bhubaneswar, Odisha, India",
-    description: [
-      "Participated in the Pandora Paradox hackathon during KIIT E-Summit 2025 as part of Team Binary Brains.",
-      "Developed a Fraud Detection App, an AI/ML-powered Streamlit web application designed to detect anomalous and fraudulent transactions.",
-      "Focused on model building, real-time prediction, explainable AI, and rapid iteration under competitive constraints.",
-      "Collaborated with a multidisciplinary team and learned from expert mentors on financial AI and model deployment."
-    ],
-    skills: ["Python", "Streamlit", "Machine Learning", "Fraud Detection", "Anomaly Detection", "Explainable AI"],
-    links: {
-      demo: "https://fraud-detection-app-rxiwn9wo9sfcg3m7icga2b.streamlit.app/",
-      github: "https://github.com/bhanukumardev/fraud-detection-app"
-    }
-  },
-  {
-    id: "adobe",
-  logo: adobeLogo,
-    title: "Team Member – Adobe India Hackathon (Round 1)",
-    company: "Adobe",
-    duration: "Sep 2025",
+    id: "aenexz-ai-ml-intern",
+    logo: aenexzLogo,
+    title: "AI & ML Intern",
+    company: "Aenexz Tech Private Limited",
+    duration: "Mar 2026 - May 2026",
     location: "Remote",
     description: [
-      "Competed as part of Team BAG representing KIIT Bhubaneswar in the Adobe India Hackathon organized by Adobe and Unstop.",
-      "Tackled challenging online MCQ assessments and coding rounds, collaborating closely with team members to solve problems under pressure.",
-      "Enhanced skills in teamwork, coding, and technical problem-solving during a competitive, fast-paced event."
+      "Developed and implemented AI/ML solutions.",
+      "Gained hands-on experience in data processing, algorithmic optimization, and deploying practical AI applications.",
+      "Earned dual certifications for program completion and excellence."
     ],
-    skills: ["Competitive Programming", "Problem Solving", "Teamwork", "Algorithm Design"]
+    skills: ["Machine Learning", "Problem Solving", "Innovation", "AI Development"],
+    credentialLink: "https://drive.google.com/drive/folders/158l0z_52_rPjHEjrwttIPToPq2ZsZiRN?usp=drive_link"
   },
   {
     id: "codealpha",
@@ -98,15 +50,38 @@ const experiences: Experience[] = [
     duration: "May 2025 - Aug 2025",
     location: "Remote",
     description: [
-      "Selected as a Machine Learning Intern at CodeAlpha.",
-      "Developed a Credit Scoring Model using the UCI German Credit dataset and implemented logistic regression and random forest algorithms.",
-      "Performed feature engineering, model evaluation (Precision, Recall, F1-score, ROC-AUC), and presented results via Jupyter Notebook and slides.",
-      "Enhanced skills in model building, evaluation, teamwork, and adaptability."
+      "Developed a Credit Scoring Model using the UCI German Credit dataset.",
+      "Implemented logistic regression and random forest algorithms to enhance model building and evaluation skills."
     ],
     skills: ["Python", "Machine Learning", "Data Preprocessing", "Feature Engineering", "Scikit-learn", "Model Evaluation"],
     links: {
       github: "https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel"
     }
+  },
+  {
+    id: "pinnacle",
+  logo: pinnacleLogo,
+    title: "Artificial Intelligence Intern",
+    company: "Pinnacle Labs",
+    duration: "May 2025 - Jun 2025",
+    location: "Remote",
+    description: [
+      "Developed an AI Translator App, a GenAI Resume Parser, and a Teachable Machine Project.",
+      "Enhanced skills in machine learning and web app deployment."
+    ],
+    skills: ["Python", "AI", "Streamlit", "Flask", "OpenAI", "ollama", "Teachable Machine"]
+  },
+  {
+    id: "internship-studio",
+  logo: internshipstudioLogo,
+    title: "C++ & Data Structures Intern",
+    company: "Internship Studio",
+    duration: "Jun 2024 - Jul 2024",
+    location: "Remote",
+    description: [
+      "Implemented core data structures in C++ and solved algorithmic problems with a focus on time/space complexity optimization."
+    ],
+    skills: ["C++", "Data Structures", "Algorithms", "Problem Solving", "Object-Oriented Programming"]
   },
   {
     id: "codesprint",
@@ -124,35 +99,59 @@ const experiences: Experience[] = [
     skills: ["Data Structures", "Algorithms", "Problem Solving", "Competitive Programming", "C++", "Java"]
   },
   {
-    id: "internship-studio",
-  logo: internshipstudioLogo,
-    title: "C++ & Data Structures Intern",
-    company: "Internship Studio",
-    duration: "Apr 2024 - Jun 2024",
-    location: "Remote",
+    id: "usc-rpa",
+    logo: uscKiitLogo,
+    title: "RPA & AI Domain Member",
+    company: "USC.KIIT",
+    duration: "Oct 2025 - Present",
+    location: "Bhubaneswar, Odisha, India",
     description: [
-      "Worked on C++ programming fundamentals and advanced data structures implementation.",
-      "Implemented sorting algorithms, searching techniques, and complex data structures.",
-      "Enhanced skills in algorithmic problem-solving and efficient coding practices.",
-      "Received positive feedback from mentor: 'He has shown strong C++ and Data Structures skills during the internship.'"
+      "Collaborating with engineering peers on Robotic Process Automation (RPA) and AI initiatives.",
+      "Implementing automation workflows and driving technology-centric solutions within the student community."
     ],
-    skills: ["C++", "Data Structures", "Algorithms", "Problem Solving", "Object-Oriented Programming"]
+    skills: ["UiPath Studio", "RPA", "Automation", "AI Integration", "Workflow Design"]
   },
   {
-    id: "pinnacle",
-  logo: pinnacleLogo,
-    title: "Artificial Intelligence Intern",
-    company: "Pinnacle Labs",
-    duration: "May 2024 - Jun 2024",
-    location: "Remote",
+    id: "hackdays-kiit",
+    logo: kitpd2s,
+    title: "Organizing Committee & Event Management Member (Volunteering)",
+    company: "KITPD2S Society",
+    duration: "Sep 2025 - Present",
+    location: "Bhubaneswar, Odisha, India",
     description: [
-      "Developed and deployed three AI-powered projects during the internship.",
-      "AI Translator App: Real-time multi-language translation web app (Python, Flask, OpenAI API).",
-      "GenAI Resume Parser: AI-powered PDF resume parser using LLMs (Python, Flask, OpenAI GPT-4).",
-      "Teachable Machine Project: Custom image classification using Google's Teachable Machine.",
-      "Enhanced skills in machine learning, web app development, and practical AI deployment."
+      "Served on the organizing committee for HackDays @ KIIT – Build w/ Gemini (official MLH mini-hackathon).",
+      "Managed event coordination, floor operations, and technical support.",
+      "Awarded Certificate of Appreciation."
     ],
-    skills: ["Python", "AI", "Streamlit", "Flask", "OpenAI", "ollama", "Teachable Machine"]
+    skills: ["Leadership", "Event Management", "Team Coordination", "Community Building"],
+    credentialLink: "https://drive.google.com/file/d/1bNBOL2rGgqNxseVwW6tUU6-1aVC2PAb-/view?usp=drive_link"
+  },
+  {
+    id: "et-ai-hackathon-2026",
+  logo: etLogo,
+    title: "Semi-Finalist - ET-AI Hackathon 2026",
+    company: "The Economic Times",
+    duration: "Aug 2026",
+    location: "Vercel · Remote",
+    description: [
+      "Advanced as a Semi-Finalist by building Money Mentor, an AI-driven financial mentor application deployed to Vercel.",
+      "Designed the solution to help users make smarter financial decisions using generative AI and practical product thinking."
+    ],
+    skills: ["Generative AI", "Problem Solving", "Competitive Analysis", "Technical Assessment"],
+    credentialLink: "https://drive.google.com/file/d/1Mz2fLnESpnhMynxPtF5vo5XB_bf64Bzd/view?usp=drive_link"
+  },
+  {
+    id: "ghci-2025",
+  logo: ghciLogo,
+    title: "GHCI 2025 Hackathon - 'Unbound with GenAI'",
+    company: "AnitaB.org India",
+    duration: "Dec 2025",
+    location: "India",
+    description: [
+      "Participated in the Grace Hopper Celebration of India (GHCI) 2025 Hackathon.",
+      "Collaborated with Team 'Saathi' to explore cutting-edge GenAI applications and develop innovative tech solutions focused on real-world impact."
+    ],
+    skills: ["Generative AI", "Team Collaboration", "Rapid Prototyping"]
   },
   {
     id: "viksit-bharat",
@@ -230,9 +229,19 @@ export const ExperienceSection = () => {
                     ))}
                   </div>
 
-                  {exp.links && (
-                    <div className="flex gap-4 pt-2">
-                      {exp.links.demo && (
+                  {(exp.credentialLink || exp.links) && (
+                    <div className="flex flex-wrap gap-4 pt-2">
+                      {exp.credentialLink && (
+                        <a
+                          href={exp.credentialLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-primary hover:text-primary-glow transition-colors text-sm"
+                        >
+                          Credential <ExternalLink className="w-4 h-4" />
+                        </a>
+                      )}
+                      {exp.links?.demo && (
                         <a
                           href={exp.links.demo}
                           target="_blank"
@@ -242,7 +251,7 @@ export const ExperienceSection = () => {
                           View Demo <ExternalLink className="w-4 h-4" />
                         </a>
                       )}
-                      {exp.links.github && (
+                      {exp.links?.github && (
                         <a
                           href={exp.links.github}
                           target="_blank"
