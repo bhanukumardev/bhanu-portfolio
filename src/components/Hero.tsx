@@ -113,7 +113,7 @@ export const Hero = () => {
   const handleDownloadResume = () => {
     try {
       const a = document.createElement("a");
-      a.href = resumePdf as unknown as string;
+      a.href = "/bhanu-portfolio/bhanu-kumar-dev-resume.pdf";
       a.download = "bhanu-kumar-dev-resume.pdf";
       document.body.appendChild(a);
       a.click();
