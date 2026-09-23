@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, Download, ChevronDown, X } from "lucide-react";
 import { Button } from "./ui/button";
 import bhanuGif from "../../assets/bhanu-animated.gif";
 import resumePdf from "../../assets/bhanu-kumar-dev-resume.pdf";
+import { ResumeModal } from "./ResumeModal";
 
 // Professional avatar image (you'll need to add this to assets)
 const avatarImage = bhanuGif; // Using existing gif for now - replace with professional photo
@@ -110,18 +111,10 @@ export const Hero = () => {
     }
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleDownloadResume = () => {
-    try {
-      const a = document.createElement("a");
-      a.href = "/bhanu-portfolio/bhanu-kumar-dev-resume.pdf";
-      a.download = "bhanu-kumar-dev-resume.pdf";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-    } catch (err) {
-      // fallback: open in new tab
-      window.open(resumePdf as unknown as string, "_blank");
-    }
+    setIsModalOpen(true);
   };
 
   return (
@@ -275,6 +268,9 @@ export const Hero = () => {
               <ChevronDown className="h-8 w-8 text-cyan-400" />
             </motion.button>
           </motion.div>
+
+          {/* Resume Modal */}
+          <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </motion.div>
       </div>
     </section>

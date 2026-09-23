@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import bhanuGif from "../../assets/bhanu-animated.gif";
 import resumePdf from "../../assets/bhanu-kumar-dev-resume.pdf";
+import { ResumeModal } from "./ResumeModal";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -54,14 +55,7 @@ const Navbar: React.FC = () => {
                   {item.label}
                 </a>
               ))}
-              <a
-                href="/bhanu-portfolio/bhanu-kumar-dev-resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 px-4 py-1.5 rounded-full font-medium transition"
-              >
-                Resume
-              </a>
+              <ResumeModal />
             </div>
 
             {/* Mobile Hamburger Button */}
