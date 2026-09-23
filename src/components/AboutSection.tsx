@@ -23,11 +23,11 @@ export const AboutSection = () => {
       <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative" data-aos="zoom-in" data-aos-delay="80">
-            <div className="aspect-square rounded-2xl overflow-hidden card-glow glass-effect p-4">
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden card-glow glass-effect">
               <img
-                src="/bhanu-portfolio/bhanu-profile.jpg"
+                src="/bhanu-portfolio/bhanu-profile.jpeg"
                 alt="Bhanu Kumar Dev"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </div>

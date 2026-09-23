@@ -28,6 +28,17 @@ createRoot(document.getElementById("root")!).render(<App />);
 AOS.init({ once: false, mirror: true, duration: 800 });
 
 // Register Service Worker for PWA functionality
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/bhanu-portfolio/sw.js')
+      .then(registration => {
+        console.log('SW registered: ', registration);
+      })
+      .catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
+  });
+}
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
 	window.addEventListener('load', () => {
 		navigator.serviceWorker.register('/bhanu-portfolio/service-worker.js')
