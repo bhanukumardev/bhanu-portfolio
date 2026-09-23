@@ -10,6 +10,7 @@ import fooddelivery from "../../assets/food-delivery.gif";
 import emotionRecognition from "../../assets/EmotionRecognition-EEG_Signal.jpg";
 import moneyMentor from "../../assets/Money Mentor.gif";
 import faqBot from "../../assets/E-Commerce FAQ Bot.png";
+import ashaLogo from "../../assets/asha.jpeg";
 
 export interface Project {
   title: string;
@@ -22,96 +23,106 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Emotion Recognition using EEG Signals",
-    description: "Implemented machine learning and deep learning algorithms to extract features from EEG brainwave data and classify emotional states. Developed as a core academic mini-project to explore affective computing.",
-    tags: ["Python", "Machine Learning", "Deep Learning"],
-  image: emotionRecognition,
-    github: "https://github.com/bhanukumardev/EmotionRecognition-EEG_Signal"
-  },
-  {
-    title: "Money Mentor – AI Financial Advisor",
-    description: "Built a full-stack, AI-driven financial mentor application for the Economic Times GenAI Hackathon 2026 (Semi-Finalist). Designed to help users make smarter financial decisions and plan their journey to financial independence.",
-    tags: ["Generative AI", "Full-Stack Development", "Vercel"],
-  image: moneyMentor,
-    github: "https://github.com/bhanukumardev/Money-Mentor"
+    title: "Asha - AI Companion for Senior Wellness",
+    description: "AI-powered wellness companion for senior citizens with voice support, guided exercises, health tracking, and PWA capabilities.",
+    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "PWA", "AI", "Voice"],
+    image: ashaLogo,
+    demo: "https://kinetic-asha-avatar.vercel.app/",
+    github: "https://github.com/bhanukumardev/kinetic-asha-avatar"
   },
   {
     title: "Agentic AI E-Commerce FAQ Bot",
-    description: "Developed an autonomous Agentic AI Capstone Project featuring an intelligent e-commerce FAQ bot. Leveraged advanced LLM workflows to build a context-aware system for rapid user query resolution.",
+    description: "Autonomous Agentic AI capstone with intelligent FAQ bot using advanced LLM workflows for rapid query resolution.",
     tags: ["Python", "LangGraph", "ChromaDB", "Streamlit"],
-  image: faqBot,
+    image: faqBot,
+    demo: "https://e-commerce-faq-bot.streamlit.app/",
     github: "https://github.com/bhanukumardev/Agentic-AI-Capstone-Project"
   },
   {
+    title: "Money Mentor – AI Financial Advisor",
+    description: "Full-stack AI-driven financial mentor for Economic Times GenAI Hackathon 2026 (Semi-Finalist). Smart financial planning and independence.",
+    tags: ["Generative AI", "Full-Stack Development", "Vercel"],
+    image: moneyMentor,
+    demo: "https://money-mentor-zeta.vercel.app/",
+    github: "https://github.com/bhanukumardev/Money-Mentor"
+  },
+  {
+    title: "Health Symptom Predictor",
+    description: "AI health prediction with React, FastAPI, PostgreSQL, ML models, and Groq LLM chatbot. Full-stack AI health diagnosis.",
+    tags: ["React", "FastAPI", "PostgreSQL", "ML", "Groq LLM"],
+    image: health,
+    demo: "https://health-symptom-predictor.vercel.app/",
+    github: "https://github.com/bhanukumardev/health-symptom-predictor"
+  },
+  {
+    title: "Emotion Recognition using EEG Signals",
+    description: "ML/deep learning algorithms extracting EEG brainwave features to classify emotional states. Academic affective computing project.",
+    tags: ["Python", "Machine Learning", "Deep Learning"],
+    image: emotionRecognition,
+    github: "https://github.com/bhanukumardev/EmotionRecognition-EEG_Signal"
+  },
+  {
+    title: "SIH SurakshaSaathi",
+    description: "Real-time disaster management training with AI/ML analytics and gamified drills. Smart India Hackathon project.",
+    tags: ["TypeScript", "AI/ML", "Full-Stack", "SIH"],
+    image: sih,
+    demo: "https://suraksha-saathi.vercel.app/",
+    github: "https://github.com/bhanukumardev/SIH-SurakshaSaathi-DisasterMgmt-Training"
+  },
+  {
+    title: "QuickBite Food Delivery",
+    description: "Modern food delivery PWA with React, TypeScript & Framer Motion. Interactive modals, real-time tracking, smart location services.",
+    tags: ["React", "TypeScript", "Framer Motion", "PWA", "Tailwind CSS"],
+    image: fooddelivery,
+    demo: "https://quickbite-motion-delight.vercel.app/",
+    github: "https://github.com/bhanukumardev/food-delivery-quickbite"
+  },
+  {
+    title: "Fraud Detection App",
+    description: "AI/ML fraud detection for financial transactions. Pandora Paradox @ KIIT E-Summit 2025. Real-time anomaly detection.",
+    tags: ["Python", "Streamlit", "ML", "Anomaly Detection"],
+    image: fraud,
+    demo: "https://fraud-detection-app-rxiwn9wo9sfcg3m7icga2b.streamlit.app/",
+    github: "https://github.com/bhanukumardev/fraud-detection-app"
+  },
+  {
+    title: "News Headline Scrapper",
+    description: "Automated news aggregation with UiPath bot scraping top headlines from BBC and Times of India.",
+    tags: ["Python", "UiPath", "Web Scraping", "Automation"],
+    image: newsscrapper,
+    demo: "https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_uipath-uipathstudentcommunity-usckiit-activity-7386007620220006400-fzt5",
+    github: "https://github.com/bhanukumardev/MinorProject_NewsHeadlineScrapper"
+  },
+  {
+    title: "Credit Scoring Model",
+    description: "Machine learning model for credit risk analysis using scikit-learn. Predict credit risk with ML.",
+    tags: ["ML", "Random Forest", "Data Analysis"],
+    image: creditscore,
+    demo: "https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_machinelearning-creditscoring-datascience-activity-7335941965395492865-vW-f",
+    github: "https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel"
+  },
+  {
     title: "GenAI Resume Parser",
-    description: "AI-powered resume parser using Python, Flask, OpenAI, and Ollama. Parse resumes instantly with AI. Try the live demo or view the code.",
+    description: "AI-powered resume parser using Python, Flask, OpenAI, and Ollama. Parse resumes instantly with AI.",
     tags: ["NLP", "LLM", "PDF Parsing", "FastAPI"],
-  image: resumeparser,
+    image: resumeparser,
     demo: "https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_pinnaclelabs-genai-ai-activity-7334604534679302144-WLN8",
     github: "https://github.com/bhanukumardev/GenAI_Resume_Parser"
   },
   {
     title: "AI Translator App",
-    description: "Real-time multi-language translation app using Python and Streamlit. Translate languages in real-time. Try the demo or see the code.",
+    description: "Real-time multi-language translation app using Python and Streamlit. Translate languages instantly.",
     tags: ["Streamlit", "Deep Translator", "UI/UX"],
-  image: translator,
+    image: translator,
     demo: "https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_pinnaclelabs-ai-python-activity-7340036639034929152-Telc",
     github: "https://github.com/bhanukumardev/TranslatorApp"
   },
   {
-    title: "Credit Scoring Model",
-    description: "Machine learning model for credit risk analysis using scikit-learn. Predict credit risk with ML. Try the demo or view code.",
-    tags: ["ML", "Random Forest", "Data Analysis"],
-  image: creditscore,
-    demo: "https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_machinelearning-creditscoring-datascience-activity-7335941965395492865-vW-f",
-    github: "https://github.com/bhanukumardev/CodeAlpha_CreditScoringModel"
-  },
-  {
     title: "Teachable Machine Project",
-    description: "Custom image classifier using Google's Teachable Machine. Classify images with a no-code ML tool. Try or view code.",
+    description: "Custom image classifier using Google's Teachable Machine. Classify images with no-code ML.",
     tags: ["No-code ML", "Image Classification"],
-  image: teachable,
+    image: teachable,
     demo: "https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_ai-teachablemachine-pinnaclelabs-activity-7340379191940448257-LFl3",
     github: "https://github.com/bhanukumardev/TeachableMachineProject"
-  },
-  {
-    title: "Health Symptom Predictor",
-    description: "AI-powered health prediction app with React, FastAPI, PostgreSQL, ML models, and Groq LLM chatbot. Full-stack AI health prediction with ML disease models and intelligent chatbot. Deployed on Vercel.",
-    tags: ["React", "FastAPI", "PostgreSQL", "ML", "Groq LLM"],
-  image: health,
-    demo: "https://health-symptom-predictor.vercel.app/",
-    github: "https://github.com/bhanukumardev/health-symptom-predictor"
-  },
-  {
-    title: "Fraud Detection App",
-    description: "AI/ML-based fraud detection for financial transactions. Created for Pandora Paradox @ KIIT E-Summit 2025. Real-time financial fraud detection system. Competition project by Team Binary Brains.",
-    tags: ["Python", "Streamlit", "ML", "Anomaly Detection"],
-  image: fraud,
-    demo: "https://fraud-detection-app-rxiwn9wo9sfcg3m7icga2b.streamlit.app/",
-    github: "https://github.com/bhanukumardev/fraud-detection-app"
-  },
-  {
-    title: "SIH SurakshaSaathi",
-    description: "Real-time disaster management training platform with AI/ML integration, analytics, and gamified drills. Smart India Hackathon project for disaster management training with real-time alerts and gamification.",
-    tags: ["TypeScript", "AI/ML", "Full-Stack", "SIH"],
-  image: sih,
-    demo: "https://suraksha-saathi.vercel.app/",
-    github: "https://github.com/bhanukumardev/SIH-SurakshaSaathi-DisasterMgmt-Training"
-  },
-  {
-    title: "News Headline Scrapper",
-    description: "Automated news aggregation with UiPath bot that scrapes top 5 headlines from BBC and Times of India. Automated bot for real-time news headline extraction from major news sources.",
-    tags: ["Python", "UiPath", "Web Scraping", "Automation"],
-  image: newsscrapper,
-    demo: "https://www.linkedin.com/posts/bhanu-kumar-dev-97b820313_uipath-uipathstudentcommunity-usckiit-activity-7386007620220006400-fzt5",
-    github: "https://github.com/bhanukumardev/MinorProject_NewsHeadlineScrapper"
-  },
-  {
-    title: "QuickBite Food Delivery",
-    description: "Built at GDG (Google Developers Group) Society KIIT, Building Bad Event 2025. Modern food delivery PWA with React, TypeScript & Framer Motion. Features interactive modals, real-time tracking, smart location services, and smooth animations. 30-min delivery promise.",
-    tags: ["React", "TypeScript", "Framer Motion", "PWA", "Tailwind CSS"],
-    image: fooddelivery,
-    demo: "https://quickbite-motion-delight.vercel.app/",
-    github: "https://github.com/bhanukumardev/food-delivery-quickbite"
   }
 ];
