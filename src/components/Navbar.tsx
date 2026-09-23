@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
                 </a>
               ))}
               <a
-                href={resumePdf}
+                href="/bhanu-portfolio/bhanu-kumar-dev-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 px-4 py-1.5 rounded-full font-medium transition"
